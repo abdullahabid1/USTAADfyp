@@ -1,6 +1,6 @@
 <html><head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script><style>.register{
     background: -webkit-linear-gradient(left, #3931af, #00c6ff);
-    background-image: url({{ asset('assets/education/images/grey.jpg') }});
+    background-image: url(images/grey.jpg);
     margin-top: 1%;
     padding: 3%;
 }
