@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="author" content="colorlib.com">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" />
-    <link href="css/main.css" rel="stylesheet" />
+    <link href="{{ asset('assets/searchbox/css/main.css') }}" rel="stylesheet" />
   </head>
-  <body style="background-image: url(images/2.jpg);">
+  <body style="background-image: url({{ asset('assets/searchbox/images/2.jpg') }});">
     <div class="s008">
       <form>
         <div class="inner-form">
@@ -102,7 +102,7 @@
         </div>
       </form>
     </div>
-    <script src="js/extention/choices.js"></script>
+    <script src="{{ asset('assets/searchbox/js/extention/choices.js') }}"></script>
     <script>
       const customSelects = document.querySelectorAll("select");
       const deleteBtn = document.getElementById('delete')
