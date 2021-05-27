@@ -30,5 +30,10 @@ Route::get('/login', function () {
     return view('education.login');
 });
 
+
+Route::get('/reg', function () {
+    return view('education.registration');
+});
+
 Route::get("user",[UserController::class,"print"]);
 Route::view("log","users");
