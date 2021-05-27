@@ -8,34 +8,34 @@
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet">
 	
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
+	<!-- Animate.css') }} -->
+	<link rel="stylesheet" href="{{ asset('assets/education/css/animate.css') }}">
 	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="{{ asset('assets/education/css/icomoon.css') }}">
 	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="{{ asset('assets/education/css/bootstrap.css') }}">
 
 	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="{{ asset('assets/education/css/magnific-popup.css') }}">
 
 	<!-- Owl Carousel  -->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="{{ asset('assets/education/css/owl.carousel.min.css') }}">
+	<link rel="stylesheet" href="{{ asset('assets/education/css/owl.theme.default.min.css') }}">
 
 	<!-- Flexslider  -->
-	<link rel="stylesheet" href="css/flexslider.css">
+	<link rel="stylesheet" href="{{ asset('assets/education/css/flexslider.css') }}">
 
 	<!-- Pricing -->
-	<link rel="stylesheet" href="css/pricing.css">
+	<link rel="stylesheet" href="{{ asset('assets/education/css/pricing.css') }}">
 
 	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="{{ asset('assets/education/css/style.css') }}">
 
 	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script src="{{ asset('assets/education/js/modernizr-2.6.2.min.js') }}"></script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
+	<script src="{{ asset('assets/education/js/respond.min.js') }}"></script>
 	<![endif]-->
 
 	</head>
@@ -97,7 +97,7 @@
 	<aside id="fh5co-hero">
 		<div class="flexslider">
 			<ul class="slides">
-		   	<li style="background-image: url(images/course.jpg);">
+		   	<li style="background-image: url({{ asset('assets/education/images/course.jpg') }});">
 		   		<div class="overlay-gradient"></div>
 		   		<div class="container">
 		   			<div class="row">
@@ -125,7 +125,7 @@
 			<div class="row">
 				<div class="col-md-6 animate-box">
 					<div class="course">
-						<a href="#" class="course-img" style="background-image: url(images/web.jpg);">
+						<a href="#" class="course-img" style="background-image: url({{ asset('assets/education/images/web.jpg') }});">
 						</a>
 						<div class="desc">
 							<h3><a href="#">Web Master</a></h3>
@@ -136,7 +136,7 @@
 				</div>
 				<div class="col-md-6 animate-box">
 					<div class="course">
-						<a href="#" class="course-img" style="background-image: url(images/busin.jpg);">
+						<a href="#" class="course-img" style="background-image: url({{ asset('assets/education/images/busin.jpg') }});">
 						</a>
 						<div class="desc">
 							<h3><a href="#">Business &amp; Accounting</a></h3>
@@ -147,7 +147,7 @@
 				</div>
 				<div class="col-md-6 animate-box">
 					<div class="course">
-						<a href="#" class="course-img" style="background-image: url(images/scien.jpg);">
+						<a href="#" class="course-img" style="background-image: url({{ asset('assets/education/images/scien.jpg') }});">
 						</a>
 						<div class="desc">
 							<h3><a href="#">Science &amp; Technology</a></h3>
@@ -158,7 +158,7 @@
 				</div>
 				<div class="col-md-6 animate-box">
 					<div class="course">
-						<a href="#" class="course-img" style="background-image: url(images/health1.jpg);">
+						<a href="#" class="course-img" style="background-image: url({{ asset('assets/education/images/health1.jpg') }});">
 						</a>
 						<div class="desc">
 							<h3><a href="#">Health &amp; Psychology</a></h3>
@@ -169,7 +169,7 @@
 				</div>
 				<div class="col-md-6 animate-box">
 					<div class="course">
-						<a href="#" class="course-img" style="background-image: url(images/cont.jpg);">
+						<a href="#" class="course-img" style="background-image: url({{ asset('assets/education/images/cont.jpg') }});">
 						</a>
 						<div class="desc">
 							<h3><a href="#">Business Managment</a></h3>
@@ -180,7 +180,7 @@
 				</div>
 				<div class="col-md-6 animate-box">
 					<div class="course">
-						<a href="#" class="course-img" style="background-image: url(images/health.jpg);">
+						<a href="#" class="course-img" style="background-image: url({{ asset('assets/education/images/health.jpg') }});">
 						</a>
 						<div class="desc">
 							<h3><a href="#">App Development</a></h3>
@@ -193,7 +193,7 @@
 		</div>
 	</div>
 
-	<div id="fh5co-register" style="background-image: url(images/cont.jpg);">
+	<div id="fh5co-register" style="background-image: url({{ asset('assets/education/images/cont.jpg') }});">
 		<div class="overlay"></div>
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2 animate-box">
@@ -208,7 +208,7 @@
 		</div>
 	</div>
 
-	<footer id="fh5co-footer" role="contentinfo" style="background-image: url(images/img_bg_4.jpg);">
+	<footer id="fh5co-footer" role="contentinfo" style="background-image: url({{ asset('assets/education/images/img_bg_4.jpg') }});">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row row-pb-md">
@@ -278,28 +278,28 @@
 	</div>
 	
 	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
+	<script src="{{ asset('assets/education/js/jquery.min.js') }}"></script>
 	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="{{ asset('assets/education/js/jquery.easing.1.3.js') }}"></script>
 	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
+	<script src="{{ asset('assets/education/js/bootstrap.min.js') }}"></script>
 	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="{{ asset('assets/education/js/jquery.waypoints.min.js') }}"></script>
 	<!-- Stellar Parallax -->
-	<script src="js/jquery.stellar.min.js"></script>
+	<script src="{{ asset('assets/education/js/jquery.stellar.min.js') }}"></script>
 	<!-- Carousel -->
-	<script src="js/owl.carousel.min.js"></script>
+	<script src="{{ asset('assets/education/js/owl.carousel.min.js') }}"></script>
 	<!-- Flexslider -->
-	<script src="js/jquery.flexslider-min.js"></script>
+	<script src="{{ asset('assets/education/js/jquery.flexslider-min.js') }}"></script>
 	<!-- countTo -->
-	<script src="js/jquery.countTo.js"></script>
+	<script src="{{ asset('assets/education/js/jquery.countTo.js') }}"></script>
 	<!-- Magnific Popup -->
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/magnific-popup-options.js"></script>
+	<script src="{{ asset('assets/education/js/jquery.magnific-popup.min.js') }}"></script>
+	<script src="{{ asset('assets/education/js/magnific-popup-options.js') }}"></script>
 	<!-- Count Down -->
-	<script src="js/simplyCountdown.js"></script>
+	<script src="{{ asset('assets/education/js/simplyCountdown.js') }}"></script>
 	<!-- Main -->
-	<script src="js/main.js"></script>
+	<script src="{{ asset('assets/education/js/main.js') }}"></script>
 	<script>
     var d = new Date(new Date().getTime() + 1000 * 120 * 120 * 2000);
 

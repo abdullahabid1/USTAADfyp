@@ -14,7 +14,7 @@ use App\Http\Controllers\UserController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('education.blog');
 });
-Route::post("user",[UserController::class,"getData"]);
+Route::get("user",[UserController::class,"print"]);
 Route::view("log","users");
