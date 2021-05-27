@@ -14,7 +14,21 @@ use App\Http\Controllers\UserController;
 */
 
 Route::get('/', function () {
+    return view('education.index');
+});
+
+Route::get('/courses', function () {
+    return view('education.courses');
+});
+
+Route::get('/library', function () {
     return view('education.blog');
 });
+
+
+Route::get('/login', function () {
+    return view('education.login');
+});
+
 Route::get("user",[UserController::class,"print"]);
 Route::view("log","users");
