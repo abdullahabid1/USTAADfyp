@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> //change by hassaan
 	<html>
 	<head>
     @csrf
