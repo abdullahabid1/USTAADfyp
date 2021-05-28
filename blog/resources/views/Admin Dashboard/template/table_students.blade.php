@@ -7,18 +7,18 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<!-- VENDOR CSS -->
-	<link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="assets/vendor/linearicons/style.css">
+	<link rel="stylesheet" href="{{asset('assets/admin/vendor/bootstrap/css/bootstrap.min.css')}}">
+	<link rel="stylesheet" href="{{asset('assets/admin/vendor/font-awesome/css/font-awesome.min.css')}}">
+	<link rel="stylesheet" href="{{asset('assets/admin/vendor/linearicons/style.css')}}">
 	<!-- MAIN CSS -->
-	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="{{asset('assets/admin/css/main.css')}}">
 	<!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
-	<link rel="stylesheet" href="assets/css/demo.css">
+	<link rel="stylesheet" href="{{asset('assets/admin/css/demo.css')}}">
 	<!-- GOOGLE FONTS -->
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
 	<!-- ICONS -->
-	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="{{asset ('assets/admin/img/apple-icon.png')}}">
+	<link rel="icon" type="image/png" sizes="96x96" href="{{asset ('assets/admin/img/favicon.png')}}">
 </head>
 
 <body>
@@ -47,7 +47,7 @@
 					<ul class="nav navbar-nav navbar-right">
 						
 						<li class="">
-							<a href="page-profile.html" class=""><img src="assets/img/user.png" class="img-circle" alt="Avatar"> <span>Samuel</span> <i class="icon-submenu lnr"></i></a>
+							<a href="page-profile.html" class=""><img src="{{asset ('assets/admin/img/user.png')}}" class="img-circle" alt="Avatar"> <span>Samuel</span> <i class="icon-submenu lnr"></i></a>
 						</li>
 						<!-- <li>
 							<a class="update-pro" href="https://www.themeineed.com/downloads/klorofil-pro-bootstrap-admin-dashboard-template/?utm_source=klorofil&utm_medium=template&utm_campaign=KlorofilPro" title="Upgrade to Pro" target="_blank"><i class="fa fa-rocket"></i> <span>UPGRADE TO PRO</span></a>
@@ -63,8 +63,8 @@
 				<nav>
 					<ul class="nav">
 						<li><a href="index.html" class=""><i class="lnr lnr-home"></i> <span>Dashboard</span></a></li>
-						<li><a href="table_tutors.html" class="active"><i class="lnr lnr-dice"></i> <span>Tutors</span></a></li>
-						<li><a href="table_students.html" class=""><i class="lnr lnr-user"></i> <span>Students</span></a></li>
+						<li><a href="table_tutors.html" class=""><i class="lnr lnr-dice"></i> <span>Tutors</span></a></li>
+						<li><a href="table_students.html" class="active"><i class="lnr lnr-user"></i> <span>Students</span></a></li>
 						<li><a href="Library_Admin.html" class=""><i class="lnr lnr-book"></i> <span>Library</span></a></li>
 						
 					</ul>
@@ -77,7 +77,7 @@
 			<!-- MAIN CONTENT -->
 			<div class="main-content">
 				<div class="container-fluid">
-					<h3 class="page-title">Tutors</h3>
+					<h3 class="page-title">Students</h3>
 					<div class="row">
 						
 						<div class="col-md-12">
@@ -93,8 +93,8 @@
 												<th>#</th>
 												<th>Full Name</th>
 												<th>Contact No.</th>
-												<th>Course</th>
-												<th>Price</th>
+												<th>Email</th>
+												<th></th>
 												<th></th>
 											</tr>
 										</thead>
@@ -103,26 +103,27 @@
 												<td>1</td>
 												<td>Steve Jobs</td>
 												<td>090078601</td>
-												<td>Web Development</td>
-												<td>$100/hr</td>
+												<td>Student@gmail.com</td>
+												<td></td>
 												<td><a href="#" class = "btn btn-primary">View Profile</a></td>
 											</tr>
 											<tr>
 												<td>1</td>
 												<td>Steve Jobs</td>
 												<td>090078601</td>
-												<td>Web Development</td>
-												<td>$100/hr</td>
+												<td>Student@gmail.com</td>
+												<td></td>
 												<td><a href="#" class = "btn btn-primary">View Profile</a></td>
 											</tr>
 											<tr>
 												<td>1</td>
 												<td>Steve Jobs</td>
 												<td>090078601</td>
-												<td>Web Development</td>
-												<td>$100/hr</td>
+												<td>Student@gmail.com</td>
+												<td></td>
 												<td><a href="#" class = "btn btn-primary">View Profile</a></td>
 											</tr>
+											
 										</tbody>
 									</table>
 								</div>
@@ -145,10 +146,10 @@
 	</div>
 	<!-- END WRAPPER -->
 	<!-- Javascript -->
-	<script src="assets/vendor/jquery/jquery.min.js"></script>
-	<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
-	<script src="assets/vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
-	<script src="assets/scripts/klorofil-common.js"></script>
+	<script src="{{asset('assets/admin/vendor/jquery/jquery.min.js')}}"></script>
+	<script src="{{asset('assets/admin/vendor/bootstrap/js/bootstrap.min.js')}}"></script>
+	<script src="{{asset('assets/admin/vendor/jquery-slimscroll/jquery.slimscroll.min.js')}}"></script>
+	<script src="{{asset('assets/admin/scripts/klorofil-common.js')}}"></script>
 </body>
 
 </html>

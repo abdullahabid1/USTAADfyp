@@ -14,7 +14,7 @@ use App\Http\Controllers\UserController;
 */
 
 Route::get('/', function () {
-    return view('education.index');
+    return view('Admin Dashboard.template.UploadBook');
 });
 
 Route::get('/courses', function () {
