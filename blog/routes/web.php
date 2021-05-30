@@ -14,17 +14,23 @@ use App\Http\Controllers\UserController;
 */
 
 Route::get('/', function () {
-    return view('Admin Dashboard.template.UploadBook');
+    return view('education.index');
 });
 
-Route::get('/courses', function () {
-    return view('education.courses');
-});
+Route::view('/courses', 'education.courses');
 
 Route::get('/library', function () {
     return view('education.blog');
 });
 
+
+Route::get('/about', function () {
+    return view('education.about');
+});
+
+Route::get('/contact', function () {
+    return view('education.contact');
+});
 
 Route::get('/login', function () {
     return view('education.login');
