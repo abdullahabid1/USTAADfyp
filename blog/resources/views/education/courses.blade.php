@@ -62,16 +62,8 @@
 			</div>
 		</div>
 		<div class="top-menu">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-2">
-						<div id="fh5co-logo"><a href="index.html"><i class="icon-study"></i>USTAAD<span>.</span></a></div>
-					</div>
-					<div class="col-xs-10 text-right menu-1">
-						@include('education.nav')
-					</div>
-				</div>
-				
+		<div class="container">
+				@include('education.nav')
 			</div>
 		</div>
 	</nav>
@@ -112,7 +104,7 @@
 						<div class="desc">
 							<h3><a href="#">Web Master</a></h3>
 							<p>All Web Masters Courses are Available.</p>
-							<span><a href="web master.html" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
+							<span><a href="{{url('/courses/webmaster')}}" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
 						</div>
 					</div>
 				</div>
@@ -123,7 +115,7 @@
 						<div class="desc">
 							<h3><a href="#">Business &amp; Accounting</a></h3>
 							<p>All Business Courses are also Available.</p>
-							<span><a href="Business and Accounting.html" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
+							<span><a href="{{url('/courses/business')}}" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
 						</div>
 					</div>
 				</div>
@@ -134,7 +126,7 @@
 						<div class="desc">
 							<h3><a href="#">Science &amp; Technology</a></h3>
 							<p>All Science and Technology Courses are Available.</p>
-							<span><a href="Science and Technology/html" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
+							<span><a href="{{url('/courses/science')}}" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
 						</div>
 					</div>
 				</div>
@@ -145,7 +137,7 @@
 						<div class="desc">
 							<h3><a href="#">Health &amp; Psychology</a></h3>
 							<p>All Health and Psychology Courses are Available.</p>
-							<span><a href="Health and Psychology.html" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
+							<span><a href="{{url('/courses/health')}}" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
 						</div>
 					</div>
 				</div>
@@ -154,9 +146,9 @@
 						<a href="#" class="course-img" style="background-image: url({{ asset('assets/education/images/cont.jpg') }});">
 						</a>
 						<div class="desc">
-							<h3><a href="#">Business Managment</a></h3>
+							<h3><a href="#">Mathematics</a></h3>
 							<p>.</p>
-							<span><a href="Business and Accounting.html" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
+							<span><a href="{{url('/courses/math')}}" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
 						</div>
 					</div>
 				</div>

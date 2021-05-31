@@ -93,13 +93,14 @@
     margin-top: 8%;
     margin-bottom: -15%;
     color: #495057;
-}</style></head><center></center><body><div class="container register">
+}</style></head><center></center>
+<body><div class="container register">
                 <div class="row">
                     <div class="col-md-3 register-left">
                         <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt="">
                         <h3>Welcome</h3>
                         <p>Login Form</p>
-                        <form action = "index.html" method  = "get"><input type="submit" name="" value="Back"></form><br>
+                        <form action = "{{url('/')}}" method  = "get"><input type="submit" class = "" name="" value="Back"></form><br>
                     </div>
                     
                     <div class="col-md-8 register-right">
@@ -117,19 +118,7 @@
                                         <div class="form-group">
                                             <input type="password" class="form-control" placeholder="Password *" value="" required>
                                         </div>
-                                        <div class="form-group">
-                                            <div class="maxl">
-                                                <label class="radio inline"> 
-                                                    <input type="radio" name="gender" value="male" checked="">
-                                                    <span> Male </span> 
-                                                </label>
-                                                
-                                                <label class="radio inline"> 
-                                                    <input type="radio" name="gender" value="female">
-                                                    <span>Female </span> 
-                                                </label>
-                                            </div>
-                                        </div>
+                                       
                                     </div>
                                     <div class="col-md-6">
                                         

@@ -63,34 +63,8 @@
 			</div>
 		</div>
 		<div class="top-menu">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-2">
-						<div id="fh5co-logo"><a href="index.html"><i class="icon-study"></i>USTAAD<span>.</span></a></div>
-					</div>
-					<div class="col-xs-10 text-right menu-1">
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="courses.html">Courses</a></li>
-							<li><a href="teacher.html">Teacher</a></li>
-							<li><a href="about.html">About</a></li>
-							<li class="active"><a href="pricing.html">Pricing</a></li>
-							<li class="has-dropdown">
-								<a href="blog.html">Library</a>
-								<ul class="dropdown">
-									<li><a href="ebooks.html">E-Books</a></li>
-									<li><a href="ebooks.html">Notes</a></li>
-									<li><a href="#"></a></li>
-									<li><a href="#"></a></li>
-								</ul>
-							</li>
-							<li><a href="contact.html">Contact</a></li>
-							<li class="btn-cta"><a href="#"><span>Login</span></a></li>
-							<li class="btn-cta"><a href="registration.html"><span>Sign Up</span></a></li>
-						</ul>
-					</div>
-				</div>
-				
+		<div class="container">
+				@include('education.nav')
 			</div>
 		</div>
 	</nav>

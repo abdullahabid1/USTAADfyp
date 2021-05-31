@@ -79,15 +79,7 @@
 
 		<div class="top-menu">
 			<div class="container">
-				<div class="row">
-					<div class="col-xs-2">
-						<div id="fh5co-logo"><a href="index.html"><i class="icon-study"></i>USTAAD<span>.</span></a></div>
-					</div>
-					<div class="col-xs-10 text-right menu-1">
-						@include('education.nav')
-					</div>
-				</div>
-				
+				@include('education.nav')
 			</div>
 		</div>
 	</nav>
@@ -103,7 +95,7 @@
 			   				<div class="slider-text-inner">
 			   					<h1>The Roots of Education are Bitter, But the Fruit is Sweet</h1>
 									<h2>Brought to you by USTAAD <a href="" target="_blank"></a></h2>
-									<p><a class="btn btn-primary btn-lg" href="search/searchbox.html">Start Learning Now!</a></p>
+									<p><a class="btn btn-primary btn-lg" href="{{ url('/searchbox') }}">Start Learning Now!</a></p>
 			   				</div>
 			   			</div>
 			   		</div>
@@ -117,7 +109,7 @@
 			   				<div class="slider-text-inner">
 			   					<h1>The Great Aim of Education is not Knowledge, But Action</h1>
 									<h2>Brought to you by USTAAD <a href="" target="_blank"></a></h2>
-									<p><a class="btn btn-primary btn-lg btn-learn" href="search/searchbox.html">Start Learning Now!</a></p>
+									<p><a class="btn btn-primary btn-lg btn-learn" href="{{ url('/searchbox') }}">Start Learning Now!</a></p>
 			   				</div>
 			   			</div>
 			   		</div>
@@ -131,7 +123,7 @@
 			   				<div class="slider-text-inner">
 			   					<h1>We Help You to Learn New Things</h1>
 									<h2>Brought to you by USTAAD <a href="" target="_blank"></a></h2>
-									<p><a class="btn btn-primary btn-lg btn-learn" href="search/searchbox.html">Start Learning Now!</a></p>
+									<p><a class="btn btn-primary btn-lg btn-learn" href="{{ url('/searchbox') }}">Start Learning Now!</a></p>
 			   				</div>
 			   			</div>
 			   		</div>

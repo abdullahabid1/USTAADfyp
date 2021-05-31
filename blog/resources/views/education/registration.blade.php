@@ -99,7 +99,7 @@
                         <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt="">
                         <h3>Welcome</h3>
                         <p>Registration Form</p>
-                        <form action = "index.html" method  = "get"><input type="submit" name="" value="Back"></form><br>
+                        <form action = "{{url('/')}}" method  = "get"><input type="submit" name="" value="Back"></form><br>
                     </div>
                     <div class="col-md-8 register-right">
                         <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">

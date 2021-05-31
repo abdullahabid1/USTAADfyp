@@ -93,8 +93,8 @@
                 <div class="result-count">
                   <span>108 </span>results</div>
                 <div class="group-btn">
-                  <button class="btn-delete" id="delete">Reset</button>
-                  <a href="tutor/SearchResults.html"  class="btn-search">Search</a></button>
+                  <a class="btn-search" href = "{{ url('/') }}">Back</a>
+                  <a href="tutor/SearchResults.html"  class="btn-search">Search</a>
                 </div>
               </div>
             </div>

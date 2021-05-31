@@ -25,52 +25,10 @@
 	<!-- WRAPPER -->
 	<div id="wrapper">
 		<!-- NAVBAR -->
-		<nav class="navbar navbar-default navbar-fixed-top">
-			<div class="brand">
-				<a href="index.html"><b>USTAAD</b></a>
-			</div>
-			<div class="container-fluid">
-				<div class="navbar-btn">
-					<button type="button" class="btn-toggle-fullwidth"><i class="lnr lnr-arrow-left-circle"></i></button>
-				</div>
-
-				<form class="navbar-form navbar-left">
-					<div class="input-group">
-						<input type="text" value="" class="form-control" placeholder="Search student, tutor, book">
-						<span class="input-group-btn"><button type="button" class="btn btn-primary">Go</button></span>
-					</div>
-				</form>
-				<div class="navbar-btn navbar-btn-right">
-					<a class="btn btn-success update-pro" href="https://www.themeineed.com/downloads/klorofil-pro-bootstrap-admin-dashboard-template/?utm_source=klorofil&utm_medium=template&utm_campaign=KlorofilPro" title="Upgrade to Pro" target="_blank"><i class="fa fa-rocket"></i> <span>Logout</span></a>
-				</div>
-				<div id="navbar-menu">
-					<ul class="nav navbar-nav navbar-right">
-						
-						<li class="">
-							<a href="page-profile.html" class=""><img src="{{asset('assets/admin/img/user.png')}}" class="img-circle" alt="Avatar"> <span>Samuel</span> <i class="icon-submenu lnr"></i></a>
-						</li>
-						<!-- <li>
-							<a class="update-pro" href="https://www.themeineed.com/downloads/klorofil-pro-bootstrap-admin-dashboard-template/?utm_source=klorofil&utm_medium=template&utm_campaign=KlorofilPro" title="Upgrade to Pro" target="_blank"><i class="fa fa-rocket"></i> <span>UPGRADE TO PRO</span></a>
-						</li> -->
-					</ul>
-				</div>
-			</div>
-		</nav>
+		@include('AdminDashboard.template.adminNavTop')
 		<!-- END NAVBAR -->
 		<!-- LEFT SIDEBAR -->
-		<div id="sidebar-nav" class="sidebar">
-			<div class="sidebar-scroll">
-				<nav>
-					<ul class="nav">
-						<li><a href="index.html" class=""><i class="lnr lnr-home"></i> <span>Dashboard</span></a></li>
-						<li><a href="table_tutors.html" class=""><i class="lnr lnr-dice"></i> <span>Tutors</span></a></li>
-						<li><a href="table_students.html" class=""><i class="lnr lnr-user"></i> <span>Students</span></a></li>
-						<li><a href="Library_Admin.html" class=""><i class="lnr lnr-book"></i> <span>Library</span></a></li>
-						
-					</ul>
-				</nav>
-			</div>
-		</div>
+		@include('AdminDashboard.template.adminNavSide')
 		<!-- END LEFT SIDEBAR -->
 		<!-- MAIN -->
 		<div class="main">
@@ -110,7 +68,7 @@
 									<br>
 									<button type="submit" class = "btn btn-primary">Upload</button>
 									<button type="submit" class = "btn btn-success">Update</button>
-									<a href="Library_Admin.html" class = "btn btn-default">Cancle</a>
+									<a href="{{url('/admin')}}" class = "btn btn-default">Cancle</a>
 								</div>
 							</div>
 							<!-- END INPUTS -->

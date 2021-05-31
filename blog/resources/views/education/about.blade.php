@@ -75,16 +75,8 @@
 			</div>
 		</div>
 		<div class="top-menu">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-2">
-						<div id="fh5co-logo"><a href="index.html"><i class="icon-study"></i>USTAAD<span>.</span></a></div>
-					</div>
-					<div class="col-xs-10 text-right menu-1">
-					@include('education.nav')
-					</div>
-				</div>
-				
+		<div class="container">
+				@include('education.nav')
 			</div>
 		</div>
 	</nav>
