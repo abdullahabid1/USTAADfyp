@@ -79,7 +79,7 @@
 						<div id="fh5co-logo"><a href="index.html"><i class="icon-study"></i>USTAAD<span>.</span></a></div>
 					</div>
 					<div class="col-xs-10 text-right menu-1">
-					@include('education.nav')
+						@include('education.nav')
 					</div>
 				</div>
 				
@@ -115,10 +115,10 @@
 					<div class="fh5co-contact-info">
 						<h3>Contact Information</h3>
 						<ul>
-							<li class="address">198 West 21th Street, <br> Suite 721 New York NY 10016</li>
-							<li class="phone"><a href="tel://1234567920">+ 1235 2355 98</a></li>
+							<li class="address">33 Block Model Twon Gujranwala <br> Suite 721 Pakistan</li>
+							<li class="phone"><a href="tel://+92 336 4739942">+92 336 4739942</a></li>
 							<li class="email"><a href="mailto:info@yoursite.com">info@yoursite.com</a></li>
-							<li class="url"><a href="http://freehtml5.co">freeHTML5.co</a></li>
+							<li class="url"><a href="http://www.ustaad.com">www.ustaad.com</a></li>
 						</ul>
 					</div>
 
@@ -190,7 +190,12 @@
 			<div class="row row-pb-md">
 				<div class="col-md-3 fh5co-widget">
 					<h3>About Education</h3>
-					<p>.</p>
+					<ul class="fh5co-footer-links">
+						<li><a href="#">Daily News</a></li>
+						<li><a href="#">Videos</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">Get Tutor</a></li>
+						</ul>
 				</div>
 				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
 					<h3>Learning</h3>
@@ -239,8 +244,7 @@
 			<div class="row copyright">
 				<div class="col-md-12 text-center">
 					<p>
-						<small class="block">&copy; </small> 
-						<small class="block">2021 USTAAD. All Rights Reserved <a href="http://freehtml5.co/" target="_blank">Designed by USTAAD</a> Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a> &amp; <a href="https://www.pexels.com/" target="_blank">Pexels</a></small>
+						<small class="block">&copy; 2021 USTAAD. All Rights Reserved <a href="http://127.0.0.1:8000/" target="_blank">Designed by USTAAD</a></small>
 					</p>
 				</div>
 			</div>

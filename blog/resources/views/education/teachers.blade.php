@@ -105,7 +105,7 @@
 			<div class="row">
 				<div class="col-md-3 text-center">
 					<div class="staff">
-						<div class="staff-img" style="background-image: url({{asset('assets/education/images/staff-1.jpg')}});">
+						<div class="staff-img" style="background-image: url({{asset('assets/education/images/Teacher3.jpg')}});">
 							<ul class="fh5co-social">
 								<li><a href="#"><i class="icon-facebook2"></i></a></li>
 								<li><a href="#"><i class="icon-twitter2"></i></a></li>
@@ -113,14 +113,14 @@
 								<li><a href="#"><i class="icon-github"></i></a></li>
 							</ul>
 						</div>
-						<span>Health Teacher</span>
-						<h3><a href="#">Mike Smith</a></h3>
+						<span>Artifical Intelligence Teacher</span>
+						<h3><a href="#">Alina Asif</a></h3>
 						<p>.</p>
 					</div>
 				</div>
 				<div class="col-md-3 animate-box text-center">
 					<div class="staff">
-						<div class="staff-img" style="background-image: url({{asset('assets/education/images/staff-2.jpg')}});">
+						<div class="staff-img" style="background-image: url({{asset('assets/education/images/Teacher2.jpg')}});">
 							<ul class="fh5co-social">
 								<li><a href="#"><i class="icon-facebook2"></i></a></li>
 								<li><a href="#"><i class="icon-twitter2"></i></a></li>
@@ -128,14 +128,14 @@
 								<li><a href="#"><i class="icon-github"></i></a></li>
 							</ul>
 						</div>
-						<span>Health Teacher</span>
-						<h3><a href="#">Mike Smith</a></h3>
+						<span>Cybersecurity Teacher</span>
+						<h3><a href="#">Mehmood Khan</a></h3>
 						<p>.</p>
 					</div>
 				</div>
 				<div class="col-md-3 animate-box text-center">
 					<div class="staff">
-						<div class="staff-img" style="background-image: url({{ asset('assets/education/images/staff-3.jpg') }});">
+						<div class="staff-img" style="background-image: url({{ asset('assets/education/images/Teacher1.jpg') }});">
 							<ul class="fh5co-social">
 								<li><a href="#"><i class="icon-facebook2"></i></a></li>
 								<li><a href="#"><i class="icon-twitter2"></i></a></li>
@@ -143,14 +143,14 @@
 								<li><a href="#"><i class="icon-github"></i></a></li>
 							</ul>
 						</div>
-						<span>Health Teacher</span>
-						<h3><a href="#">Mike Smith</a></h3>
+						<span>Acounting Teacher</span>
+						<h3><a href="#">Ajwa Shafeeq</a></h3>
 						<p>.</p>
 					</div>
 				</div>
 				<div class="col-md-3 animate-box text-center">
 					<div class="staff">
-						<div class="staff-img" style="background-image: url({{asset('assets/education/images/staff-1.jpg')}});">
+						<div class="staff-img" style="background-image: url({{asset('assets/education/images/Teacher4.jpg')}});">
 							<ul class="fh5co-social">
 								<li><a href="#"><i class="icon-facebook2"></i></a></li>
 								<li><a href="#"><i class="icon-twitter2"></i></a></li>
@@ -158,14 +158,14 @@
 								<li><a href="#"><i class="icon-github"></i></a></li>
 							</ul>
 						</div>
-						<span>Health Teacher</span>
-						<h3><a href="#">Mike Smith</a></h3>
+						<span>Applied Mathematics Teacher</span>
+						<h3><a href="#">Hamza Jameel</a></h3>
 						<p>.</p>
 					</div>
 				</div>
 				<div class="col-md-3 animate-box text-center">
 					<div class="staff">
-						<div class="staff-img" style="background-image: url({{asset('assets/education/images/staff-1.jpg')}});">
+						<div class="staff-img" style="background-image: url({{asset('assets/education/images/Teacher8.jpg')}});">
 							<ul class="fh5co-social">
 								<li><a href="#"><i class="icon-facebook2"></i></a></li>
 								<li><a href="#"><i class="icon-twitter2"></i></a></li>
@@ -173,14 +173,14 @@
 								<li><a href="#"><i class="icon-github"></i></a></li>
 							</ul>
 						</div>
-						<span>Health Teacher</span>
-						<h3><a href="#">Mike Smith</a></h3>
+						<span>Graphics Designing Teacher</span>
+						<h3><a href="#">Muhammad Haroon</a></h3>
 						<p>.</p>
 					</div>
 				</div>
 				<div class="col-md-3 animate-box text-center">
 					<div class="staff">
-						<div class="staff-img" style="background-image: url({{asset('assets/education/images/staff-3.jpg')}});">
+						<div class="staff-img" style="background-image: url({{asset('assets/education/images/Teacher6.jpg')}});">
 							<ul class="fh5co-social">
 								<li><a href="#"><i class="icon-facebook2"></i></a></li>
 								<li><a href="#"><i class="icon-twitter2"></i></a></li>
@@ -188,14 +188,14 @@
 								<li><a href="#"><i class="icon-github"></i></a></li>
 							</ul>
 						</div>
-						<span>Health Teacher</span>
-						<h3><a href="#">Mike Smith</a></h3>
+						<span>Cognitive Psychology Teacher</span>
+						<h3><a href="#">Akbar Ali</a></h3>
 						<p>.</p>
 					</div>
 				</div>
 				<div class="col-md-3 animate-box text-center">
 					<div class="staff">
-						<div class="staff-img" style="background-image: url({{asset('assets/education/images/staff-2.jpg')}});">
+						<div class="staff-img" style="background-image: url({{asset('assets/education/images/Teacher7.jpg')}});">
 							<ul class="fh5co-social">
 								<li><a href="#"><i class="icon-facebook2"></i></a></li>
 								<li><a href="#"><i class="icon-twitter2"></i></a></li>
@@ -203,14 +203,14 @@
 								<li><a href="#"><i class="icon-github"></i></a></li>
 							</ul>
 						</div>
-						<span>Health Teacher</span>
-						<h3><a href="#">Mike Smith</a></h3>
+						<span>Biotechnology and Genetic Engineering Teacher</span>
+						<h3><a href="#">Tenzela Ilyas</a></h3>
 						<p>.</p>
 					</div>
 				</div>
 				<div class="col-md-3 animate-box text-center">
 					<div class="staff">
-						<div class="staff-img" style="background-image: url({{asset('assets/education/images/staff-3.jpg')}});">
+						<div class="staff-img" style="background-image: url({{asset('assets/education/images/download.jpg')}});">
 							<ul class="fh5co-social">
 								<li><a href="#"><i class="icon-facebook2"></i></a></li>
 								<li><a href="#"><i class="icon-twitter2"></i></a></li>
@@ -218,8 +218,8 @@
 								<li><a href="#"><i class="icon-github"></i></a></li>
 							</ul>
 						</div>
-						<span>Health Teacher</span>
-						<h3><a href="#">Mike Smith</a></h3>
+						<span>Web Developer Teacher</span>
+						<h3><a href="#">Umer Ali</a></h3>
 						<p>.</p>
 					</div>
 				</div>
@@ -248,7 +248,12 @@
 			<div class="row row-pb-md">
 				<div class="col-md-3 fh5co-widget">
 					<h3>About Education</h3>
-					<p>.</p>
+					<ul class="fh5co-footer-links">
+						<li><a href="#">Daily News</a></li>
+						<li><a href="#">Videos</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">Get Tutor</a></li>
+						</ul>
 				</div>
 				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
 					<h3>Learning</h3>
@@ -297,8 +302,7 @@
 			<div class="row copyright">
 				<div class="col-md-12 text-center">
 					<p>
-						<small class="block">&copy; 2021 USTAAD. All Rights Reserved.</small> 
-						<small class="block">Designed by USTAAD<a href="http://freehtml5.co/" target="_blank"></a> Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a> &amp; <a href="https://www.pexels.com/" target="_blank">Pexels</a></small>
+					<small class="block">&copy; 2021 USTAAD. All Rights Reserved <a href="http://127.0.0.1:8000/" target="_blank">Designed by USTAAD</a></small>
 					</p>
 				</div>
 			</div>

@@ -93,7 +93,7 @@
     margin-top: 8%;
     margin-bottom: -15%;
     color: #495057;
-}</style></head><center></center>
+}</style></head>
 <body><div class="container register">
                 <div class="row">
                     <div class="col-md-3 register-left">
@@ -124,8 +124,15 @@
                                         
 
                                         <input type="submit" class="btnRegister" value="Login">
+                                        
                                     </div>
                                 </div>
+                                <div class='col-lg-12 forgot_pw'>
+      <p>
+        <span> Forgot your Password? </span>
+        <a class="links2" href="/users/password/new">Click here to reset it</a>
+      </p>
+    </div>
 								</form></center>
 							</div>
 

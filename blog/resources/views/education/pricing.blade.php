@@ -93,8 +93,8 @@
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
-					<h2>Plan &amp; Pricing</h2>
-					<p>There are different type of Packages of Courses. You can choose and continuoe by your Favorite Package. USTAAD provides you lot of Affordable and Free Packages. </p>
+					<h2>Plan &amp; Pricing by USTAAD</h2>
+					<p>Prices of All Courses are Listed. You Can Take Affordable Packages of Courses.</p>
 				</div>
 			</div>
 			<div class="row">
@@ -118,26 +118,18 @@
                      	<ul class="pricing__feature-list">
 	                        <li class="pricing__feature"></li>
 	                        <li class="pricing__feature"></li>
-	                        <li class="pricing__feature"></li>
 	                        <li class="pricing__feature">No Library Access</li>
+	                        <li class="pricing__feature"></li>
 	                        <li class="pricing__feature"></li>
 	                        <li class="pricing__feature">No Ebook</li>
 	                         <li class="pricing__feature"></li>
 	                     </ul>
-	                      <a href="payment.html">
+	                     <a href="payment.html">
 	                     <button class="pricing__action">Choose plan</button>
 	                 </a>
                      </div>
                   </div>
 					</div>
-					<div class="col-md-4 animate-box">
-						<div class="pricing__item">
-							<div class="wrap-price">
-								<!-- <div class="icon icon-store"></div> -->
-	                     <h3 class="pricing__title">Silver</h3>
-	                     <!-- <p class="pricing__sentence">Up to 5 users</p> -->
-							</div>
-                     
 					<div class="col-md-4 animate-box">
                   <div class="pricing__item">
                   	<div class="wrap-price">
@@ -164,7 +156,7 @@
 	                         <li class="pricing__feature"></li>
 	                     </ul>
 	                      <a href="payment.html">
-	                     <button class="pricing__action">Choose plan</button>
+	                     <button  class="pricing__action">Choose plan</button>
 	                 </a>
                      </div>
                   </div>
@@ -173,7 +165,6 @@
 			</div>
 		</div>
 	</div>
-
 	<div id="fh5co-register" style="background-image: url({{ asset('assets/education/images/cont.jpg') }});">
 		<div class="overlay"></div>
 		<div class="row">
@@ -195,7 +186,12 @@
 			<div class="row row-pb-md">
 				<div class="col-md-3 fh5co-widget">
 					<h3>About Education</h3>
-					<p>.</p>
+					<ul class="fh5co-footer-links">
+						<li><a href="#">Daily News</a></li>
+						<li><a href="#">Videos</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">Get Tutor</a></li>
+						</ul>
 				</div>
 				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
 					<h3>Learning</h3>
@@ -244,8 +240,7 @@
 			<div class="row copyright">
 				<div class="col-md-12 text-center">
 					<p>
-						<small class="block">&copy; 2021 USTAAD. All Rights Reserved.</small> 
-						<small class="block">Designed by USTAAD<a href="http://freehtml5.co/" target="_blank"></a> Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a> &amp; <a href="https://www.pexels.com/" target="_blank">Pexels</a></small>
+					<small class="block">&copy; 2021 USTAAD. All Rights Reserved <a href="http://127.0.0.1:8000/" target="_blank">Designed by USTAAD</a></small>
 					</p>
 				</div>
 			</div>

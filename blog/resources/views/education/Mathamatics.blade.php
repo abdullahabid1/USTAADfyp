@@ -291,13 +291,11 @@
                             <div class="row no-gutters">
                                 <div class="col-lg-3 col-md-3 col-sm-12 p-0">
                                     <select class="form-control" id="exampleFormControlSelect1">
-                                        <option>Location</option>
-                                        <option>London</option>
-                                        <option>Boston</option>
-                                        <option>Mumbai</option>
-                                        <option>New York</option>
-                                        <option>Toronto</option>
-                                        <option>Paris</option>
+                                    <option>Location</option>
+                                        <option>Lahore</option>
+                                        <option>Karachi</option>
+                                        <option>Gujranwal</option>
+                                        <option>Multan</option>
                                     </select>
                                 </div>
                                 <div class="col-lg-8 col-md-6 col-sm-12 p-0">
@@ -366,7 +364,7 @@
                                                         </div>
                                                     </td>
                                                     <td>
-                                                        <div class="widget-26-job-salary">$ 50/hr</div>
+                                                        <div class="widget-26-job-salary">R.S 1000/hr</div>
                                                     </td>
                                                     <td>
                                                         <div class="widget-26-job-category bg-soft-base">
@@ -414,7 +412,7 @@
                                                         </div>
                                                     </td>
                                                     <td>
-                                                        <div class="widget-26-job-salary">$ 60/hr</div>
+                                                        <div class="widget-26-job-salary">R.S 600/hr</div>
                                                     </td>
                                                     <td>
                                                         <div class="widget-26-job-category bg-soft-base">
@@ -465,7 +463,7 @@
                                                         </div>
                                                     </td>
                                                     <td>
-                                                        <div class="widget-26-job-salary">$ 60/hr</div>
+                                                        <div class="widget-26-job-salary">R.S 1000/hr</div>
                                                     </td>
                                                     <td>
                                                        
@@ -514,7 +512,7 @@
                                                         </div>
                                                     </td>
                                                     <td>
-                                                        <div class="widget-26-job-salary">$ 45/hr</div>
+                                                        <div class="widget-26-job-salary">R.S 800/hr</div>
                                                     </td>
                                                     <td>
                                                        <div class="widget-26-job-category bg-soft-base">
@@ -562,7 +560,7 @@
                                                         </div>
                                                     </td>
                                                     <td>
-                                                        <div class="widget-26-job-salary">$ 70/hr</div>
+                                                        <div class="widget-26-job-salary">R.S 700/hr</div>
                                                     </td>
                                                     <td>
                                                         <div class="widget-26-job-category bg-soft-info">
@@ -610,7 +608,7 @@
                                                         </div>
                                                     </td>
                                                     <td>
-                                                        <div class="widget-26-job-salary">$ 50/hr</div>
+                                                        <div class="widget-26-job-salary">R.S 500/hr</div>
                                                     </td>
                                                     <td>
                                                         <div class="widget-26-job-category bg-soft-base">
