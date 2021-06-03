@@ -117,7 +117,7 @@
                      <div class="wrap-price">
                      	<ul class="pricing__feature-list">
 	                        <li class="pricing__feature"></li>
-	                        <li class="pricing__feature"></li>
+	                        <li class="pricing__feature">Limited Time Access</li>
 	                        <li class="pricing__feature">No Library Access</li>
 	                        <li class="pricing__feature"></li>
 	                        <li class="pricing__feature"></li>

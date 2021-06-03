@@ -380,25 +380,30 @@
 			<div class="row row-padded-mb">
 				<div class="col-md-4 animate-box">
 					<div class="fh5co-event">
-						<div class="date text-center"><span>15<br>Mar.</span></div>
-						<h3><a href="#">USA, International Triathlon Event</a></h3>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+						<div class="date text-center"><span>20<br>May.</span></div>
+						<h3><a href="#">The Computing Education Practice Conference</a></h3>
+						<p>This is hosting an event in computing education practice.
+						 It will provide you with the opportunity to discuss with like-minded people the challenges and 
+						 opportunities that currently face people in computing education.</p>
+						<p><a href="#">Read More</a></p>
+					</div>
+				</div>
+				<div class="col-md-4 animate-box">
+					<div class="fh5co-event">
+						<div class="date text-center"><span>25<br>Jun.</span></div>
+						<h3><a href="#">Career & Training Expo</a></h3>
+						<p>Career & Training Expo will be a Pakistan’s premium Recruitment and Training Exhibition. An event that enables talented youth in all fields to meet directly with recruiters and hiring managers from top.
+						The event will also act as a platform for presenting and exploring ideas.</p>
 						<p><a href="#">Read More</a></p>
 					</div>
 				</div>
 				<div class="col-md-4 animate-box">
 					<div class="fh5co-event">
 						<div class="date text-center"><span>15<br>Mar.</span></div>
-						<h3><a href="#">USA, International Triathlon Event</a></h3>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-						<p><a href="#">Read More</a></p>
-					</div>
-				</div>
-				<div class="col-md-4 animate-box">
-					<div class="fh5co-event">
-						<div class="date text-center"><span>15<br>Mar.</span></div>
-						<h3><a href="#">New Device Develope by Microsoft</a></h3>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+						<h3><a href="#">Stationery & Education Asia (Stationery & Education Expo Karachi)</a></h3>
+						<p>The main aim of organizing such event is to make the awareness and also promote the industry.
+						 Stationery & Education Asia is undoubtedly the most popular and powerful meeting place for Business 
+						 to exhibitors.</p>
 						<p><a href="#">Read More</a></p>
 					</div>
 				</div>
@@ -406,34 +411,31 @@
 			<div class="row">
 				<div class="col-lg-4 col-md-4">
 					<div class="fh5co-blog animate-box">
-						<a href="#" class="blog-img-holder" style="background-image: url({{ asset('assets/education/images/contact.jpg') }});"></a>
+						<a href="#" class="blog-img-holder" style="background-image: url({{ asset('assets/education/images/event6.jpg') }});"></a>
 						<div class="blog-text">
-							<h3><a href="#">Healty Lifestyle &amp; Living</a></h3>
-							<span class="posted_on">March. 15th</span>
-							<span class="comment"><a href="">21<i class="icon-speech-bubble"></i></a></span>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							<h3><a href="#">Best Test Prep</a></h3>
+						
+							<p>Finally, online tutoring services can also help students who need instant homework help. Some online tutoring services give students access to immediate assistance from a subject matter expert at any time, day or night, which can be particularly helpful if you have a specific question on an assignment. </p>
 						</div> 
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-4">
 					<div class="fh5co-blog animate-box">
-						<a href="#" class="blog-img-holder" style="background-image: url({{ asset('assets/education/images/grey.jpg') }});"></a>
+						<a href="#" class="blog-img-holder" style="background-image: url({{ asset('assets/education/images/event1.jpg') }});"></a>
 						<div class="blog-text">
-							<h3><a href="#">Healty Lifestyle &amp; Living</a></h3>
-							<span class="posted_on">March. 15th</span>
-							<span class="comment"><a href="">21<i class="icon-speech-bubble"></i></a></span>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							<h3><a href="#">Learn To Be</a></h3>
+							
+							<p>Many families seek out online tutoring services for their children when they are falling behind in a given subject and need to beef up their understanding in a given area. Students often greatly benefit from an online tutor’s targeted, one-on-one attention in a subject area they struggle with.</p>
 						</div> 
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-4">
 					<div class="fh5co-blog animate-box">
-						<a href="#" class="blog-img-holder" style="background-image: url({{ asset('assets/education/images/faculty.jpg') }});"></a>
+						<a href="#" class="blog-img-holder" style="background-image: url({{ asset('assets/education/images/event2.jpg') }});"></a>
 						<div class="blog-text">
-							<h3><a href="#">Healty Lifestyle &amp; Living</a></h3>
-							<span class="posted_on">March. 15th</span>
-							<span class="comment"><a href="">21<i class="icon-speech-bubble"></i></a></span>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							<h3><a href="#">Chegg Study</a></h3>
+							
+							<p>Online tutoring can make your life easier. We know your schedules are hectic and finding an hour or two in the week to fit tutoring in can be a real challenge in most cases.Moving online opens up more time slots and means tutoring can happen from anywhere with a decent internet connection. </p>
 						</div> 
 					</div>
 				</div>
@@ -469,7 +471,7 @@
                      <div class="wrap-price">
                      	<ul class="pricing__feature-list">
 	                        <li class="pricing__feature"></li>
-	                        <li class="pricing__feature"></li>
+	                        <li class="pricing__feature">Limited Time Access</li>
 	                        <li class="pricing__feature">No Library Access</li>
 	                        <li class="pricing__feature"></li>
 	                        <li class="pricing__feature"></li>
@@ -545,10 +547,10 @@
 				<a href="#" class="gallery" style="background-image: url({{ asset('assets/education/images/ab1.jpg') }});"></a>
 			</div>
 			<div class="col-md-3 col-padded">
-				<a  class="gallery" style="background-image: url({{ asset('assets/education/images/logo.jpg') }});"></a>
+				<a  class="gallery" style="background-image: url({{ asset('assets/education/images/istagram2.jpg') }});"></a>
 			</div>
 			<div class="col-md-3 col-padded">
-				<a  class="gallery" style="background-image: url({{ asset('assets/education/images/logo.jpg') }});"></a>
+				<a  class="gallery" style="background-image: url({{ asset('assets/education/images/instagram1.jpg') }});"></a>
 			</div>
 		</div>
 	</div>
