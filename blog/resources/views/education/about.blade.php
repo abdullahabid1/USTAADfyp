@@ -99,12 +99,13 @@
 		   	</li>
 		  	</ul>
 	  	</div>
-	</aside>
-
+	</aside></br></br>
+	<center>	<h1>About Our Plateform</h1></center>
 	<div id="fh5co-about">
 		<div class="container">
+		
 			<div class="col-md-6 animate-box">
-				<span>About Our Plateform</span>
+			
 				<h2>Welcome to Education Website</h2>
 				<p>USTAAD is Basically an Online Plateform By which a Student can interect any Kind of Subject Teacher. Students can easily find and communicate with a teacher Online.</p>
 				<p>Due to Covid-19 All Educational Institutes are Closed but they Providing Online Classes to Students. So on Academic bassis There are no Online Tutions for Students.</p>
