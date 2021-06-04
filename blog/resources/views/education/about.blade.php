@@ -277,10 +277,10 @@
 				<a href="#" class="gallery" style="background-image: url({{ asset('assets/education/images/ab.jpg') }});"></a>
 			</div>
 			<div class="col-md-3 col-padded">
-				<a  class="gallery" style="background-image: url({{ asset('assets/education/images/project-3.jpg') }});"></a>
+				<a  class="gallery" style="background-image: url({{ asset('assets/education/images/instagram1.jpg') }});"></a>
 			</div>
 			<div class="col-md-3 col-padded">
-				<a  class="gallery" style="background-image: url({{ asset('assets/education/images/project-4.jpg') }});"></a>
+				<a  class="gallery" style="background-image: url({{ asset('assets/education/images/istagram2.jpg') }});"></a>
 			</div>
 		</div>
 	</div>

@@ -117,24 +117,24 @@
 				<div class="col-md-4 animate-box">
 					<div class="fh5co-event">
 						<div class="date text-center"><span>15<br>Mar.</span></div>
-						<h3><a href="#">USA, International Triathlon Event</a></h3>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+						<h3><a href="#">The Economic Theory of Community Forestry</a></h3>
+						<p>Community forestry is an expanding model of forest management around the world. Over a quarter of forests in developing countries are now owned by or assigned to communities and there is a growing community forestry movement in developed countries such as Canada and the USA. There is, however, no economic theory of community forestry and no systematic treatment of the potential economic advantages of promoting Community forestry in developed countries</p>
 						<p><a href="#">Read More</a></p>
 					</div>
 				</div>
 				<div class="col-md-4 animate-box">
 					<div class="fh5co-event">
-						<div class="date text-center"><span>15<br>Mar.</span></div>
-						<h3><a href="#">USA, International Triathlon Event</a></h3>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+						<div class="date text-center"><span>05<br>Jun.</span></div>
+						<h3><a href="#"> Packaging Logistics</a></h3>
+						<p>Packaging has a major impact on supply chain performance, as it affects all logistics activities in supply chains. Effective and efficient packaging can significantly improve the performance of companies by generating value and reducing costs and the negative environmental impacts in supply chains. Packaging Logistics uses a systems approach to examine all the essential roles of packaging in supply chains, from the purchasing of raw materials to the production and sale. </p>
 						<p><a href="#">Read More</a></p>
 					</div>
 				</div>
 				<div class="col-md-4 animate-box">
 					<div class="fh5co-event">
-						<div class="date text-center"><span>15<br>Mar.</span></div>
-						<h3><a href="#">New Device Develope by Microsoft</a></h3>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+						<div class="date text-center"><span>25<br>Apr.</span></div>
+						<h3><a href="#">Natural Resources as Capital</a></h3>
+						<p> An introduction to the concepts and tools of natural resource economics, including dynamic models, market failures, and institutional remedies.This introduction to natural resource economics treats resources as a type of capital; their management is an investment problem requiring forward-looking behavior within a dynamic setting. Market failures are widespread, often associated with incomplete or nonexistent property rights, complicated by policy failure. </p>
 						<p><a href="#">Read More</a></p>
 					</div>
 				</div>
@@ -142,34 +142,44 @@
 			<div class="row">
 				<div class="col-lg-4 col-md-4">
 					<div class="fh5co-blog animate-box">
-						<a href="#" class="blog-img-holder" style="background-image: url({{ asset('assets/education/images/contact.jpg') }});"></a>
+						<a href="#" class="blog-img-holder" style="background-image: url({{ asset('assets/education/images/book1.jpg') }});"></a>
 						<div class="blog-text">
-							<h3><a href="#">Healty Lifestyle &amp; Living</a></h3>
-							<span class="posted_on">March. 15th</span>
-							<span class="comment"><a href="">21<i class="icon-speech-bubble"></i></a></span>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							<h3><a href="#">Economics for Healthcare Managers</a></h3>
+							
+							<p>Many changes are under way in healthcare as a result of both the Affordable Care Act
+							 (ACA) and insurers’ ability to discern between efficient and inefficient healthcare providers. 
+							 With more emphasis being placed on exceptional value for customers, healthcare managers must have 
+							 a solid understanding of economics to lead them through these turbulent times. In this new 
+							edition, the author examines efforts to control costs—many of which are being implemented. </p>
 						</div> 
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-4">
 					<div class="fh5co-blog animate-box">
-						<a href="#" class="blog-img-holder" style="background-image: url({{ asset('assets/education/images/conta.jpg') }});"></a>
+						<a href="#" class="blog-img-holder" style="background-image: url({{ asset('assets/education/images/book2.jpg') }});"></a>
 						<div class="blog-text">
-							<h3><a href="#">Healty Lifestyle &amp; Living</a></h3>
-							<span class="posted_on">March. 15th</span>
-							<span class="comment"><a href="">21<i class="icon-speech-bubble"></i></a></span>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							<h3><a href="#">Technology Innovation</a></h3>
+							
+							<p>Innovation is consulted a very important activity for any firm and organization especially 
+							for business units in a transitional country. By using a binary logistic regression with Vietnam
+							 Enterprise Surveys data from World Bank project, this research finds that R&D played a vital role 
+							 in encouraging innovative activities. Moreover, formal training within businesses
+							 has very strong and significant effects on all four different measures of innovation are being implemented.</p>
 						</div> 
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-4">
 					<div class="fh5co-blog animate-box">
-						<a href="#" class="blog-img-holder" style="background-image: url({{ asset('assets/education/images/health1.jpg') }});"></a>
+						<a href="#" class="blog-img-holder" style="background-image: url({{ asset('assets/education/images/book3.jpg') }});"></a>
 						<div class="blog-text">
-							<h3><a href="#">Healty Lifestyle &amp; Living</a></h3>
-							<span class="posted_on">March. 15th</span>
-							<span class="comment"><a href="">21<i class="icon-speech-bubble"></i></a></span>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							<h3><a href="#"> GLOBAL BUSINESS</a></h3>
+							
+							<p>An Economic, Social, and Environmental Perspective is the 2nd edition of the book titled 
+							“Foundations of International Business” published by Information Age Publishing, Inc. in 2015.
+							 We have approached the 2nd edition from a forward looking perspective by incorporating economic, 
+							 social, and environmental issues, which have strong links to stakeholders and are guided by the 
+							 Triple Bottom-Line (TBL) concept.
+							 A TBL approach emphasizes the importance of Profit, People, and Planet, or PPP.</p>
 						</div> 
 					</div>
 				</div>
