@@ -99,7 +99,8 @@
                         <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt="">
                         <h3>Welcome</h3>
                         <p>Registration Form</p>
-                        <form action = "{{url('/')}}" method  = "get"><input type="submit" name="" value="Back"></form><br>
+                        <form action = "" method  = "POST"><input type="submit" name="" value="Back"></form><br>
+                         @csrf
                     </div>
                     <div class="col-md-8 register-right">
                         <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
@@ -113,23 +114,23 @@
                         <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                                 <h3 class="register-heading">Register as Student</h3>
-								<form action = "#" method = "post">
+								<form action = "" method = "post">
                                 <div class="row register-form">
                                     <div class="col-md-7">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="First Name *" value="" required>
+                                            <input type="text" class="form-control" placeholder="First Name *" name="firstName" value="" required>
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Last Name *" value="" required>
+                                            <input type="text" class="form-control" placeholder="Last Name *" name="lastName" value="" required>
                                         </div>
 										<div class="form-group">
-                                            <input type="email" class="form-control" placeholder="Your Email *" value="" required>
+                                            <input type="email" class="form-control" placeholder="Your Email *" name="email"  value="" required>
                                         </div>
                                         <div class="form-group">
-                                            <input type="number" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control" placeholder="Your Phone *" value="" required>
+                                            <input type="number" minlength="10" maxlength="10" name="phone" class="form-control" placeholder="Your Phone *" value="" required>
                                         </div>
                                         <div class="form-group">
-                                            <input type="password" class="form-control" placeholder="Password *" value="" required>
+                                            <input type="password" class="form-control" placeholder="Password *" name="password" value="" required>
                                         </div>
                                         <div class="form-group">
                                             <div class="maxl">
@@ -154,23 +155,24 @@
 							</div>
                             <div class="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                                 <h3 class="register-heading">Register as Tutor</h3>
-								<form action = "#" method = "post">
+								<form action = "registration" method = "POST">
+                                @csrf
                                 <div class="row register-form">
                                     <div class="col-md-7">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Write First Name *" value="" required>
+                                            <input type="text" class="form-control" placeholder="Write First Name *" name="firstName" value="" >
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Last Name *" value="" required>
+                                            <input type="text" class="form-control" placeholder="Last Name *" name="lastName" value="" >
                                         </div>
 										<div class="form-group">
-                                            <input type="email" class="form-control" placeholder="Your Email *" value="" required>
+                                            <input type="email" class="form-control" placeholder="Your Email *" name="email" value="" >
                                         </div>
                                         <div class="form-group">
-                                            <input type="number" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control" placeholder="Your Phone *" value="" required>
+                                            <input type="number" minlength="10" maxlength="10" name="phone" class="form-control" placeholder="Your Phone *" value="" >
                                         </div>
                                         <div class="form-group">
-                                            <input type="password" class="form-control" placeholder="Password *" value="" required>
+                                            <input type="password" class="form-control" placeholder="Password *" value="" name="password" >
                                         </div>
                                         <div class="form-group">
                                             <div class="maxl">

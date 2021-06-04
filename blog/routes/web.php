@@ -105,7 +105,10 @@ Route::get('/courses/math', function () {
     return view('education.Mathamatics');
 });
 //-------------Courses pages routes END----------------
+Route::get('/tutorEdit', function () {
+    return view('education.editTutor');
+});
 
+Route::get("user",[UserController::class,'index']);
+Route::post("registration",[userController::class,'addData']);
 
-Route::get("user",[UserController::class,"print"]);
-Route::view("log","users");

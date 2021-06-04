@@ -3,17 +3,30 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use App\Models\Teacher;
 
 class userController extends Controller
 {    
-    function print()
+ 
+    function index()
     {
-        echo "test";
+        return DB::select("select * from teacher");
     }
 
-    function getData(Request $req)
+    
+    function addData(Request $req)
     {
-        return $req->input();
+        $teacher = new Teacher;
+        $teacher->firstName=$req->firstName;
+        $teacher->lastName=$req->lastName;
+        $teacher->email=$req->email;
+        $teacher->phone=$req->phone;
+        $teacher->password=$req->password;
+        $teacher->gender=$req->gender;
+        $teacher->save();
+        return redirect('tutorEdit');
+
     }
 
 }
