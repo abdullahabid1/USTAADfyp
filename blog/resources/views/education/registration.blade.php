@@ -114,14 +114,15 @@
                         <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                                 <h3 class="register-heading">Register as Student</h3>
-								<form action = "" method = "post">
+								<form action = "/student" method = "POST">
+                                @csrf
                                 <div class="row register-form">
                                     <div class="col-md-7">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="First Name *" name="firstName" value="" required>
+                                            <input type="text" class="form-control" placeholder="First Name *" name="firstname" value="" required>
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Last Name *" name="lastName" value="" required>
+                                            <input type="text" class="form-control" placeholder="Last Name *" name="lastname" value="" required>
                                         </div>
 										<div class="form-group">
                                             <input type="email" class="form-control" placeholder="Your Email *" name="email"  value="" required>

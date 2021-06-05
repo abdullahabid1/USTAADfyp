@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\StudentController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -108,6 +109,13 @@ Route::get('/courses/math', function () {
 Route::get('/tutorEdit', function () {
     return view('education.editTutor');
 });
+
+//------------Student Routes START-----------------
+Route::get('/student/show', [StudentController::class, 'index']);
+Route::post('/student', [StudentController::class, 'store']);
+Route::get('/student/edit', [StudentController::class, 'edit']);
+
+//------------Student Routes END------------------
 
 Route::get("user",[UserController::class,'index']);
 Route::post("registration",[userController::class,'addData']);
