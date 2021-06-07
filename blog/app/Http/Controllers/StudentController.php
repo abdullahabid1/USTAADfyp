@@ -38,7 +38,7 @@ class StudentController extends Controller
     public function store(Request $request)
     {
         $student = Student::create($request->all());
-        return redirect('/student/edit');
+        return view('/student/edit', compact('student'));
     }
 
     /**
@@ -60,7 +60,7 @@ class StudentController extends Controller
      */
     public function edit(Student $student)
     {
-        return view('Student.edit');
+        return view('Student.edit', compact("student"));
     }
 
     /**

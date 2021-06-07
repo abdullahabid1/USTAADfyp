@@ -113,7 +113,7 @@ Route::get('/tutorEdit', function () {
 //------------Student Routes START-----------------
 Route::get('/student/show', [StudentController::class, 'index']);
 Route::post('/student', [StudentController::class, 'store']);
-Route::get('/student/edit', [StudentController::class, 'edit']);
+Route::get('/student/{student}/edit', [StudentController::class, 'edit']);
 
 //------------Student Routes END------------------
 

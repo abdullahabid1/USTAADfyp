@@ -22,6 +22,24 @@ class CreateStudentsTable extends Migration
             $table->integer('phone');
             $table->string('password');
             $table->string('gender');
+            $table->string('about');
+
+            $table->string('street');
+            $table->string('city');
+            $table->string('state');
+            $table->integer('zipcode');
+
+            $table->string('subject1');
+            $table->string('subject2');
+            $table->string('subject3');
+            $table->string('subject4');
+
+            $table->integer('whatsapp');
+            $table->string('skype');
+            $table->string('twitter');
+            $table->string('Instagram');
+            $table->string('facebook');
+            $table->string('imagePath');
         });
     }
 
