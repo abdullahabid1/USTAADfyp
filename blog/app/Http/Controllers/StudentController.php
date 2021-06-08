@@ -38,7 +38,7 @@ class StudentController extends Controller
     public function store(Request $request)
     {
         $student = Student::create($request->all());
-        return view('/student/edit', compact('student'));
+        return view('student.edit', compact('student'));
     }
 
     /**
@@ -49,9 +49,13 @@ class StudentController extends Controller
      */
     public function show(Student $student)
     {
-        //
+        return view('student.show', compact('student'));
     }
 
+    public function showDashboard(Student $student)
+    {
+        return view('student.dashboard', compact('student'));
+    }
     /**
      * Show the form for editing the specified resource.
      *
@@ -72,7 +76,14 @@ class StudentController extends Controller
      */
     public function update(Request $request, Student $student)
     {
-        //
+        $student->update($request->all());
+        $request->validate([
+            'image' => 'required|image|mimes:jpeg,png,jpg'
+        ]);
+
+        $this->SaveImage($student);
+
+        return view('student.dashboard', compact('student'));
     }
 
     /**
@@ -84,5 +95,17 @@ class StudentController extends Controller
     public function destroy(Student $student)
     {
         //
+    }
+
+    public function SaveImage(Student $student)
+    {
+        $image = request()->file('image');
+        $filename = $student->id . '.' . $image->getClientOriginalExtension();
+
+        $image->move(public_path('/images/student'), $filename);
+
+        $student->update([
+            'image' => '/images/student/'.$filename
+            ]); 
     }
 }

@@ -16,6 +16,7 @@ class CreateStudentsTable extends Migration
         Schema::create('students', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('image');
             $table->string('firstname');
             $table->string('lastname');
             $table->string('email');
@@ -26,7 +27,7 @@ class CreateStudentsTable extends Migration
 
             $table->string('street');
             $table->string('city');
-            $table->string('state');
+            $table->string('country');
             $table->integer('zipcode');
 
             $table->string('subject1');
@@ -37,9 +38,8 @@ class CreateStudentsTable extends Migration
             $table->integer('whatsapp');
             $table->string('skype');
             $table->string('twitter');
-            $table->string('Instagram');
+            $table->string('instagram');
             $table->string('facebook');
-            $table->string('imagePath');
         });
     }
 

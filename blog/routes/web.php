@@ -113,7 +113,10 @@ Route::get('/tutorEdit', function () {
 //------------Student Routes START-----------------
 Route::get('/student/show', [StudentController::class, 'index']);
 Route::post('/student', [StudentController::class, 'store']);
+Route::get('/student/{student}/show/dashboard', [StudentController::class, 'showDashboard']);
+Route::get('/student/{student}/show', [StudentController::class, 'show']);
 Route::get('/student/{student}/edit', [StudentController::class, 'edit']);
+Route::PATCH('/student/{student}', [StudentController::class, 'update']);
 
 //------------Student Routes END------------------
 

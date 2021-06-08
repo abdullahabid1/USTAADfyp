@@ -80,7 +80,7 @@
 		<div class="account-settings">
 			<div class="user-profile">
 				<div class="user-avatar">
-					<img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" class="thumb-lg rounded-circle">
+					<img src="{{ asset($student->image) }}" alt="" class="thumb-lg rounded-circle">
 				</div>
 				<h5 class="user-name">{{ $student->firstname }} {{ " " }} {{ $student->lastname }}</h5>
 				<h6 class="user-email">{{ $student->email }}</h6>
@@ -103,15 +103,16 @@
 </div>
 <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
 <div class="card h-100">
-	<form action = "/student/update" method = "POST" enctype="multipart/form-data">
+	<form action = "/student/{{ $student->id }}" method = "POST" enctype="multipart/form-data">
 		@method("PATCH")
+		@csrf
 		<div class="card-body">
 			<h6 class="mb-2 text-primary">User image</h6>
 									<table cellspacing="5" cellspacing="5" style="height: 10px ">
 										<tr>
 											<td >Select Photo:</td>
 											<td><input type="file" id="myfile"  name="image" required></td>
-		
+											<td>{{ $errors->first('image') }}</td>
 										</tr>
 									</table><br>
 			<div class="row gutters">
@@ -189,14 +190,14 @@
 				</div>
 				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 					<div class="form-group">
-						<label for="sTate">State</label>
-						<input type="text" class="form-control" name="state" placeholder="Enter State" value = "{{ $student->state }}" required>
+						<label for="sTate">Country</label>
+						<input type="text" class="form-control" name="country" placeholder="Enter State" value = "{{ $student->country }}" required>
 					</div>
 				</div>
 				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 					<div class="form-group">
 						<label for="zIp">Zip Code</label>
-						<input type="text" class="form-control" name="zip" placeholder="Zip Code" value = "{{ $student->zip }}" required>
+						<input type="number" class="form-control" name="zipcode" placeholder="Zip Code" value = "{{ $student->zipcode }}" required>
 					</div>
 				</div>
 			</div>
@@ -238,7 +239,7 @@
 				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 					<div class="form-group">
 						<label for="fullName">Whatsapp</label>
-						<input type="text" class="form-control" name="whatsapp" placeholder="Enter Whatsapp No." value = "{{ $student->whatsapp }}" required>
+						<input type="number" class="form-control" name="whatsapp" placeholder="Enter Whatsapp No." value = "{{ $student->whatsapp }}" required>
 					</div>
 				</div>
 				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
@@ -262,7 +263,7 @@
 				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 					<div class="form-group">
 						<label for="website">Facebook</label>
-						<input type="url" class="form-control" name="facebook" placeholder="Enter Facebook ID" value = "{{ $student->facebook }}" required>
+						<input type="text" class="form-control" name="facebook" placeholder="Enter Facebook ID" value = "{{ $student->facebook }}" required>
 					</div>
 				</div>
 			</div>
@@ -271,9 +272,9 @@
 			<div class="row gutters">
 				<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 					<div class="text-right">
-						<a href="/">
+						<a href="/student/{{ $student->id }}/show/dashboard">
 						<button type="button" id="" name="" class="btn btn-secondary">Cancel</button></a>
-						<button type="button" id="submit" name="submit" class="btn btn-primary">Update</button>
+						<input type="submit" value = "Update" class="btn btn-primary"/>
 					</div>
 				</div>
 			</div>
