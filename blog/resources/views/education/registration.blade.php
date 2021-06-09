@@ -156,7 +156,7 @@
 							</div>
                             <div class="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                                 <h3 class="register-heading">Register as Tutor</h3>
-								<form action = "registration" method = "POST">
+								<form action = "/teacher" method = "POST">
                                 @csrf
                                 <div class="row register-form">
                                     <div class="col-md-7">

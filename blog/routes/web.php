@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\StudentController;
+use App\Http\Controllers\TeacherController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -120,6 +121,14 @@ Route::PATCH('/student/{student}', [StudentController::class, 'update']);
 
 //------------Student Routes END------------------
 
-Route::get("user",[UserController::class,'index']);
-Route::post("registration",[userController::class,'addData']);
+//------------Teacher Routes start------------------
+Route::post('/teacher', [TeacherController::class, 'store']);
+Route::get('/teacher/{teacher}/edit', [TeacherController::class, 'edit']);
+Route::get('/teacher/{teacher}/show/private', [TeacherController::class, 'showPrivate']);
+Route::get('/teacher/{teacher}/show/public', [TeacherController::class, 'showPublic']);
+Route::PATCH('/teacher/{teacher}', [TeacherController::class, 'update']);
+
+
+
+
 

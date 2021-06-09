@@ -11,7 +11,7 @@ class userController extends Controller
  
     function index()
     {
-        return DB::select("select * from teacher");
+        return DB::select("select * from teachers");
     }
 
     

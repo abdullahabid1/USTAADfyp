@@ -82,7 +82,7 @@
 				<div class="user-avatar">
 					<img src="{{ asset($student->image) }}" alt="" class="thumb-lg rounded-circle">
 				</div>
-				<h5 class="user-name">{{ $student->firstname }} {{ " " }} {{ $student->lastname }}</h5>
+				<h5 class="user-name">{{ $student->firstname ." ". $student->lastname }}</h5>
 				<h6 class="user-email">{{ $student->email }}</h6>
 			</div>
 			<div class="about">

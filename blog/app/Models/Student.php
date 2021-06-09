@@ -9,4 +9,7 @@ class Student extends Model
 {
     use HasFactory;
     public $guarded = [];
+    public $timestamps=false;
+
+
 }
