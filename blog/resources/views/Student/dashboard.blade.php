@@ -159,8 +159,11 @@
                             <div class="text-right">
                             	<a href="/student/{{ $student->id }}/edit">
                                 <button type="button" class="btn btn-light waves-effect"><i class="mdi mdi-account-settings-variant mr-1"></i> Edit Profile</button></a>
-                               <button type="button" class="btn btn-danger waves-effect"><i class="mdi mdi-account-settings-variant mr-1"></i> Delete Profile</button>
-                                
+                            <form action="/student/{{ $student->id }}" method = "POST">
+                                @csrf
+                                @method('DELETE')
+                                 <button type="submit" class="btn btn-danger waves-effect"><i class="mdi mdi-account-settings-variant mr-1"></i> Delete Profile</button>
+                            </form>
 
                              </div>
                         </div>

@@ -94,7 +94,7 @@ class StudentController extends Controller
      */
     public function destroy(Student $student)
     {
-        //
+        $student->delete();
     }
 
     public function SaveImage(Student $student)
