@@ -181,7 +181,7 @@
                             <p class="text-muted font-13"><strong>Email :</strong> <span class="m-l-15">{{$teacher->email}}</span></p>
                            
 							<p class="text-muted font-13"><strong>Address :</strong> <span class="m-l-15">{{$teacher->address}}</span></p>
-                            <p class="text-muted font-13"><strong>Fee :</strong> <span class="m-l-5"><span class="flag-icon flag-icon-us m-r-5 m-t-0" title="us"></span> <span>100$/hr</span>
+                            <p class="text-muted font-13"><strong>Fee :</strong> <span class="m-l-5"><span class="m-l-15">{{$teacher->price}}</span>
                             </p>
                         </div>
                         <ul class="social-links list-inline mt-4 mb-0">
@@ -325,6 +325,23 @@
 						</ul>
                     </div>
                 </div>
+                
+               <div class="card-box">
+                    <h4 class="header-title mt-0 mb-3">Course</h4>
+                    <div class="">
+                    <ul class = "list-group list-group-flush">
+							<li class = "list-group-item"><h5 class = "">{{$teacher->course}}</h5></li>
+                            </ul>
+                            </div>
+                    </div>
+                    <div class="card-box">
+                    <h4 class="header-title mt-0 mb-3">Price</h4>
+                    <div class="">
+                    <ul class = "list-group list-group-flush">
+							<li class = "list-group-item"><h5 class = "">{{$teacher->price}}</h5></li>
+                            </ul>
+                            </div>
+                    </div>
             <!-- end col -->
         </div>
         <!-- end row -->

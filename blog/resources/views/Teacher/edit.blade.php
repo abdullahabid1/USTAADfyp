@@ -128,7 +128,7 @@ a {
 				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 					<div class="form-group">
 						<label for="phone">Phone</label>
-						<input type="number" class="form-control" id="phone" value="{{$teacher->phone}}" placeholder="Enter phone number">
+						<input type="integer" class="form-control" id="phone" value="{{$teacher->phone}}" placeholder="Enter phone number">
 					</div>
 				</div>
 				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
@@ -233,6 +233,36 @@ a {
 						<div class="form-group">
 							<input type="text" class="form-control" id="Subjects" name="subject3" placeholder="Subject (Optional)">
 						</div>
+				</div>
+			</div>
+			<div class="row gutters">
+				<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+					<h6 class="mb-2 text-primary">Courses</h6>
+				</div>
+				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+					<div class="form-group">
+						
+						
+					<select class="form-control" id="exampleFormControlSelect1">
+                                        <option>Select</option>
+                                        <option>Web Master</option>
+                                        <option>Health & Psychology</option>
+                                        <option>Science & Technology</option>
+                                        <option>Mathematics</option>
+                                        <option>App Development</option>
+                                        <option>Business & Accounting</option>
+                                    </select>
+					</div>
+				</div>
+			</div>
+			<div class="row gutters">
+				<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+					<h6 class="mb-2 text-primary">Price</h6>
+				</div>
+				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+					<div class="form-group">
+						<input type="text" class="form-control" name="price" id="fullName" placeholder="Price (Required)" required>
+					</div>
 				</div>
 			</div>
 			

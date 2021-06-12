@@ -38,6 +38,8 @@ class CreateTeachersTable extends Migration
         $table->string('subject1');
         $table->string('subject2');
         $table->string('subject3');
+        $table->string('course');
+        $table->string('price');
         $table->string('experience1');
         $table->string('experience2');
         $table->string('experience3');

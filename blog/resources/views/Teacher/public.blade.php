@@ -176,7 +176,7 @@
                       <h6 class="mb-0">Fee</h6>
                     </div>
                     <div class="col-sm-9 text-secondary">
-                      $50/hr
+                      {{$teacher->price}}
                     </div>
                   </div>
                 </div>
@@ -213,6 +213,15 @@
 						</ul>
                     </div>
                 </div>
+                <div class="card-box">
+                    <h4 class="header-title mt-0 mb-3">Course</h4>
+                    <div class="">
+                    <ul class = "list-group list-group-flush">
+							<li class = "list-group-item"><h5 class = "">{{$teacher->course}}</h5></li>
+                            </ul>
+                            </div>
+                    </div>
+                   
 			  
 			<!--
               <div class="row gutters-sm">

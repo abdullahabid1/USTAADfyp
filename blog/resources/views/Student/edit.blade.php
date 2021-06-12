@@ -147,7 +147,7 @@
 				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 					<div class="form-group">
 						<label for="phone">Phone</label>
-						<input type="number" class="form-control" name="phone" placeholder="Enter phone number" value = "{{ $student->phone }}" required>
+						<input type="integer" class="form-control" name="phone" placeholder="Enter phone number" value = "{{ $student->phone }}" required>
 					</div>
 				</div>
 				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
@@ -239,7 +239,7 @@
 				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 					<div class="form-group">
 						<label for="fullName">Whatsapp</label>
-						<input type="number" class="form-control" name="whatsapp" placeholder="Enter Whatsapp No." value = "{{ $student->whatsapp }}" required>
+						<input type="integer" class="form-control" name="whatsapp" placeholder="Enter Whatsapp No." value = "{{ $student->whatsapp }}" required>
 					</div>
 				</div>
 				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
