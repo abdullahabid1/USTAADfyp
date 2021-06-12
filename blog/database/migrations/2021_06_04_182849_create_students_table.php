@@ -20,7 +20,7 @@ class CreateStudentsTable extends Migration
             $table->string('firstname');
             $table->string('lastname');
             $table->string('email');
-            $table->integer('phone');
+            $table->string('phone');
             $table->string('password');
             $table->string('gender');
             $table->string('about');
@@ -28,14 +28,14 @@ class CreateStudentsTable extends Migration
             $table->string('street');
             $table->string('city');
             $table->string('country');
-            $table->integer('zipcode');
+            $table->string('zipcode');
 
             $table->string('subject1');
             $table->string('subject2');
             $table->string('subject3');
             $table->string('subject4');
 
-            $table->integer('whatsapp');
+            $table->string('whatsapp');
             $table->string('skype');
             $table->string('twitter');
             $table->string('instagram');

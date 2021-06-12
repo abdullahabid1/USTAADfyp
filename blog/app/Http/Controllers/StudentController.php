@@ -38,7 +38,7 @@ class StudentController extends Controller
     public function store(Request $request)
     {
         $student = Student::create($request->all());
-        return view('student.edit', compact('student'));
+        return redirect('/student/'.$student->id.'/edit');
     }
 
     /**
@@ -94,7 +94,7 @@ class StudentController extends Controller
      */
     public function destroy(Student $student)
     {
-        //
+        $student->delete();
     }
 
     public function SaveImage(Student $student)

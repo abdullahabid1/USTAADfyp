@@ -118,6 +118,7 @@ Route::get('/student/{student}/show/dashboard', [StudentController::class, 'show
 Route::get('/student/{student}/show', [StudentController::class, 'show']);
 Route::get('/student/{student}/edit', [StudentController::class, 'edit']);
 Route::PATCH('/student/{student}', [StudentController::class, 'update']);
+Route::DELETE('/student/{student}', [StudentController::class, 'destroy']);
 
 //------------Student Routes END------------------
 
