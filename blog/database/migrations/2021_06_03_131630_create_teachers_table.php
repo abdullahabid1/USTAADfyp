@@ -20,7 +20,7 @@ class CreateTeachersTable extends Migration
         $table->string('firstName');
         $table->string('lastName');
         $table->string('email');
-        $table->integer('phone');
+        $table->string('phone');
         $table->string('password');
         $table->string('gender');
         
@@ -32,7 +32,7 @@ class CreateTeachersTable extends Migration
         $table->string('qualification4');
         $table->string('city');
         $table->string('country');
-        $table->integer('zipcode');
+        $table->string('zipcode');
         $table->string('address');
 
         $table->string('subject1');
@@ -43,7 +43,7 @@ class CreateTeachersTable extends Migration
         $table->string('experience3');
         $table->string('experience4');
         
-        $table->integer('whatsapp');
+        $table->string('whatsapp');
         $table->string('skype');
         $table->string('twitter');
         $table->string('instagram');

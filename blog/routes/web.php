@@ -128,6 +128,8 @@ Route::get('/teacher/{teacher}/edit', [TeacherController::class, 'edit']);
 Route::get('/teacher/{teacher}/show/private', [TeacherController::class, 'showPrivate']);
 Route::get('/teacher/{teacher}/show/public', [TeacherController::class, 'showPublic']);
 Route::PATCH('/teacher/{teacher}', [TeacherController::class, 'update']);
+Route::DELETE('/teacher/{teacher}', [StudentController::class, 'destroy']);
+//------------Student Routes END------------------
 
 
 
