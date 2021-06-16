@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\TeacherController;
+use App\Http\Controllers\TakeCourse;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -130,6 +132,10 @@ Route::get('/teacher/{teacher}/show/public', [TeacherController::class, 'showPub
 Route::PATCH('/teacher/{teacher}', [TeacherController::class, 'update']);
 Route::DELETE('/teacher/{teacher}', [StudentController::class, 'destroy']);
 //------------Student Routes END------------------
+
+//------------Take Course------------------
+
+Route::get('/courses/takecourse/{name}',[TakeCourse::class,'takeCourse']);
 
 
 

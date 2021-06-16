@@ -158,7 +158,7 @@ a {
 				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 					<div class="form-group">
 						<label for="ciTy">About</label>
-						<input type="text" class="form-control" id="ciTy" name="about" placeholder="Write about yourself">
+						<input type="text" class="form-control" id="ciTy" name="about" value="{{$teacher->about}}"placeholder="Write about yourself">
 					</div>
 				</div>
 			</div>
@@ -171,20 +171,20 @@ a {
 				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 					<div class="form-group">
 						<label for="Country">Country</label>
-						<input type="text" class="form-control" id="Street" name="country" placeholder="Enter Country">
+						<input type="text" class="form-control" value="{{$teacher->country}}" id="Street" name="country" placeholder="Enter Country">
 					</div>
 				</div>
 				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 					<div class="form-group">
 						<label for="ciTy">City</label>
-						<input type="text" class="form-control" id="ciTy" name="city" placeholder="Enter City">
+						<input type="text" class="form-control" id="ciTy" value="{{$teacher->city}}" name="city" placeholder="Enter City">
 					</div>
 				</div>
 				
 				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 					<div class="form-group">
 						<label for="ciTy">Address</label>
-						<input type="text" class="form-control" id="ciTy" name="address" placeholder="Enter Address">
+						<input type="text" class="form-control" id="ciTy" value="{{$teacher->address}}" name="address" placeholder="Enter Address">
 					</div>
 				</div>
 			</div>
@@ -195,22 +195,22 @@ a {
 				</div>
 				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 						<div class="form-group">
-							<input type="text" class="form-control" id="Certification" name="qualification1" placeholder="Qualification/Certification (Required)" required>
+							<input type="text" value="{{$teacher->qualification1}}" class="form-control" id="Certification" name="qualification1" placeholder="Qualification/Certification (Required)" required>
 						</div>
 				</div>
 				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 						<div class="form-group">
-							<input type="text" class="form-control" id="Certification" name="qualification2" placeholder="Qualification/Certification (Optional)">
+							<input type="text" class="form-control" value="{{$teacher->qualification2}}" id="Certification" name="qualification2" placeholder="Qualification/Certification (Optional)">
 						</div>
 				</div>
 				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 						<div class="form-group">
-							<input type="text" class="form-control" id="Certification" name="qualification3" placeholder="Qualification/Certification (Optional)">
+							<input type="text" class="form-control" value="{{$teacher->qualification3}}"id="Certification" name="qualification3" placeholder="Qualification/Certification (Optional)">
 						</div>
 				</div>
 				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 						<div class="form-group">
-							<input type="text" class="form-control" id="Certification" name="qualification4" placeholder="Qualification/Certification (Optional)">
+							<input type="text" class="form-control" value="{{$teacher->qualification4}}" id="Certification" name="qualification4" placeholder="Qualification/Certification (Optional)">
 						</div>
 				</div>
 			</div>
@@ -221,17 +221,17 @@ a {
 				</div>
 				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 						<div class="form-group">
-							<input type="text" class="form-control" name="subject1" id="Subjects" placeholder="Subject (Required)" required>
+							<input type="text" class="form-control" value="{{$teacher->subject1}}" name="subject1" id="Subjects" placeholder="Subject (Required)" required>
 						</div>
 				</div>
 				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 						<div class="form-group">
-							<input type="text" class="form-control" name="subject2" id="Subjects" placeholder="Subject (Optional)">
+							<input type="text" class="form-control" value="{{$teacher->subject2}}"name="subject2" id="Subjects" placeholder="Subject (Optional)">
 						</div>
 				</div>
 				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 						<div class="form-group">
-							<input type="text" class="form-control" id="Subjects" name="subject3" placeholder="Subject (Optional)">
+							<input type="text" class="form-control" value="{{$teacher->subject3}}" id="Subjects" name="subject3" placeholder="Subject (Optional)">
 						</div>
 				</div>
 			</div>
@@ -243,7 +243,7 @@ a {
 					<div class="form-group">
 						
 						
-					<select class="form-control" id="exampleFormControlSelect1">
+					<select class="form-control"  name="course" id="exampleFormControlSelect1">
                                         <option>Select</option>
                                         <option>Web Master</option>
                                         <option>Health & Psychology</option>
@@ -261,7 +261,7 @@ a {
 				</div>
 				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 					<div class="form-group">
-						<input type="text" class="form-control" name="price" id="fullName" placeholder="Price (Required)" required>
+						<input type="text" class="form-control" name="price" value="{{$teacher->price}}" id="fullName" placeholder="Price (Required)" required>
 					</div>
 				</div>
 			</div>
@@ -272,22 +272,22 @@ a {
 				</div>
 				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 						<div class="form-group">
-							<input type="text" class="form-control" name="experience1" id="Experience" placeholder="Experience (Optional)">
+							<input type="text" class="form-control" value="{{$teacher->experience1}}" name="experience1" id="Experience" placeholder="Experience (Optional)">
 						</div>
 				</div>
 				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 						<div class="form-group">
-							<input type="text" class="form-control" name="experience2" id="Experience" placeholder="Experience (Optional)">
+							<input type="text" class="form-control" value="{{$teacher->experience2}}" name="experience2" id="Experience" placeholder="Experience (Optional)">
 						</div>
 				</div>
 				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 						<div class="form-group">
-							<input type="text" class="form-control" name="experience3" id="Experience" placeholder="Experience (Optional)">
+							<input type="text" class="form-control" value="{{$teacher->experience3}}" name="experience3" id="Experience" placeholder="Experience (Optional)">
 						</div>
 				</div>
 				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 						<div class="form-group">
-							<input type="text" class="form-control" name="experience4" id="Experience" placeholder="Experience (Optional)">
+							<input type="text" class="form-control" value="{{$teacher->experience4}}" name="experience4" id="Experience" placeholder="Experience (Optional)">
 						</div>
 				</div>
 			</div>
@@ -300,31 +300,31 @@ a {
 				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 					<div class="form-group">
 						<label for="fullName">Whatsapp</label>
-						<input type="text" class="form-control" name="whatsapp" id="fullName" placeholder="Enter Whatsapp No.">
+						<input type="text" class="form-control" value="{{$teacher->whatsapp}}" name="whatsapp" id="fullName" placeholder="Enter Whatsapp No.">
 					</div>
 				</div>
 				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 					<div class="form-group">
 						<label for="fullName">Skype</label>
-						<input type="text" class="form-control" name="skype" id="fullName" placeholder="Enter Skype ID/Email">
+						<input type="text" class="form-control" value="{{$teacher->skype}}" name="skype" id="fullName" placeholder="Enter Skype ID/Email">
 					</div>
 				</div>
 				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 					<div class="form-group">
 						<label for="eMail">Twitter</label>
-						<input type="text" class="form-control" name="twitter" id="eMail" placeholder="Enter  Twitter ID">
+						<input type="text" class="form-control" value="{{$teacher->twitter}}" name="twitter" id="eMail" placeholder="Enter  Twitter ID">
 					</div>
 				</div>
 				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 					<div class="form-group">
 						<label for="phone">Instagram</label>
-						<input type="text" class="form-control" name="instagram" id="phone" placeholder="Enter Instagram ID">
+						<input type="text" class="form-control" value="{{$teacher->instagram}}" name="instagram" id="phone" placeholder="Enter Instagram ID">
 					</div>
 				</div>
 				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 					<div class="form-group">
 						<label for="website">Facebook</label>
-						<input type="text" class="form-control" name="facebook" id="website" placeholder="Enter Facebook ID">
+						<input type="text" class="form-control" value="{{$teacher->facebook}}" name="facebook" id="website" placeholder="Enter Facebook ID">
 					</div>
 				</div>
 			</div>
@@ -335,7 +335,7 @@ a {
 				</div>
 				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 					<div class="form-group">
-						<input type="text" class="form-control" name="demo" id="fullName" placeholder="Place youtube video link here">
+						<input type="text" class="form-control" value="{{$teacher->demo}}" name="demo" id="fullName" placeholder="Place youtube video link here">
 					</div>
 				</div>
 			</div>
