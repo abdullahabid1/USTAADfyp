@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\TeacherController;
+use App\Http\Controllers\TutorSearchController;
 use App\Http\Controllers\TakeCourse;
 
 /*
@@ -20,10 +21,6 @@ use App\Http\Controllers\TakeCourse;
 //---------main page routes START-----------------
 Route::get('/', function () {
     return view('education.index');
-});
-
-Route::get('/searchbox', function () {
-    return view('education.searchbox');
 });
 
 Route::get('/courses', function () {
@@ -88,30 +85,14 @@ Route::get('/admin/uploadbook', function () {
 
 
 
-//-------------Courses pages routes START----------------
-Route::get('/courses/business', function () {
-    return view('education.Business and Accounting');
-});
+//-------------Tutor Finding routes START----------------
 
-Route::get('/courses/science', function () {
-    return view('education.Science and Technology');
-});
+Route::get('/courses/takecourse/{name}',[TakeCourse::class,'takeCourse']);
 
-Route::get('/courses/webmaster', function () {
-    return view('education.Web master');
-});
+Route::get('/search', [TutorSearchController::class,'index']);
+Route::post('/search/tutor', [TutorSearchController::class,'search']);
 
-Route::get('/courses/health', function () {
-    return view('education.Health and Psychology');
-});
-
-Route::get('/courses/math', function () {
-    return view('education.Mathamatics');
-});
-//-------------Courses pages routes END----------------
-Route::get('/tutorEdit', function () {
-    return view('education.editTutor');
-});
+//-------------Tutor Finding routes END----------------
 
 //------------Student Routes START-----------------
 Route::get('/student/show', [StudentController::class, 'index']);
@@ -132,12 +113,4 @@ Route::get('/teacher/{teacher}/show/public', [TeacherController::class, 'showPub
 Route::PATCH('/teacher/{teacher}', [TeacherController::class, 'update']);
 Route::DELETE('/teacher/{teacher}', [StudentController::class, 'destroy']);
 //------------Student Routes END------------------
-
-//------------Take Course------------------
-
-Route::get('/courses/takecourse/{name}',[TakeCourse::class,'takeCourse']);
-
-
-
-Route::view('/searchresult', 'education.SearchResults');
 

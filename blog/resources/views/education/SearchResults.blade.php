@@ -329,15 +329,6 @@
                                             <div class="records">Showing: <b>{{ count($teachers) }}</b> result(s)</div>
                                         </div>
                                         <div class="col-lg-6">
-                                            <div class="result-actions">
-                                                <div class="result-sorting">
-                                                    <span>Sort By:</span>
-                                                    <select class="form-control border-0" id="exampleOption">
-                                                        <option value="1">Relevance</option>
-                                                        <option value="2">Names (A-Z)</option>
-                                                        <option value="3">Names (Z-A)</option>
-                                                    </select>
-                                                </div>
                                                 
                                             </div>
                                         </div>
