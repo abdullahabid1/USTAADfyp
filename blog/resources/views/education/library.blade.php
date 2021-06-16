@@ -196,7 +196,7 @@
 					<h3>By USTAAD</h3>
 					<div class="simply-countdown simply-countdown-one"></div>
 					<p><strong>Limited Offer, Hurry Up!</strong></p>
-					<p><a href="registration.html" class="btn btn-primary btn-lg btn-reg">Register Now!</a></p>
+					<p><a href="http://127.0.0.1:8000/registration" class="btn btn-primary btn-lg btn-reg">Register Now!</a></p>
 				</div>
 			</div>
 		</div>

@@ -52,7 +52,7 @@ a {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-a:hover, a:active, a:focus {
+ :hover, a:active, a:focus {
   color: #2D6CDF;
   outline: none;
   text-decoration: none;
