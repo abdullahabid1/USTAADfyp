@@ -11,10 +11,8 @@ class TakeCourse extends Controller
 {
     public function takeCourse(String $name)
     {
-        print($name);
         $teachers = Teacher::where('course', '=', $name)->get();
-        foreach ($teachers as $t) {
-            print($t->firstName);
-        }
+
+        return view('education.SearchResults', compact('teachers'));
     }
 }

@@ -139,5 +139,5 @@ Route::get('/courses/takecourse/{name}',[TakeCourse::class,'takeCourse']);
 
 
 
-
+Route::view('/searchresult', 'education.SearchResults');
 

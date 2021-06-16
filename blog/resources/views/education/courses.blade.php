@@ -102,9 +102,9 @@
 						<a href="#" class="course-img" style="background-image: url({{ asset('assets/education/images/web.jpg') }});">
 						</a>
 						<div class="desc">
-							<h3><a href="#">Web Master</a></h3>
+							<h3><a href="">Web Master</a></h3>
 							<p>All Web Masters Courses are Available.</p>
-							<span><a href="{{url('/courses/webmaster')}}" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
+							<span><a href="{{url('/courses/takecourse/Web Master')}}" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
 						</div>
 					</div>
 				</div>
@@ -113,9 +113,9 @@
 						<a href="#" class="course-img" style="background-image: url({{ asset('assets/education/images/busin.jpg') }});">
 						</a>
 						<div class="desc">
-							<h3><a href="#">Business &amp; Accounting</a></h3>
+							<h3><a href="">Business &amp; Accounting</a></h3>
 							<p>All Business Courses are also Available.</p>
-							<span><a href="{{url('/courses/business')}}" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
+							<span><a href="{{url('/courses/takecourse/Business & Accounting')}}" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
 						</div>
 					</div>
 				</div>
@@ -126,7 +126,7 @@
 						<div class="desc">
 							<h3><a href="#">Science &amp; Technology</a></h3>
 							<p>All Science and Technology Courses are Available.</p>
-							<span><a href="{{url('/courses/science')}}" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
+							<span><a href="{{url('/courses/takecourse/Science & Technology')}}" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
 						</div>
 					</div>
 				</div>
@@ -137,7 +137,7 @@
 						<div class="desc">
 							<h3><a href="#">Health &amp; Psychology</a></h3>
 							<p>All Health and Psychology Courses are Available.</p>
-							<span><a href="{{url('/courses/health')}}" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
+							<span><a href="{{url('/courses/takecourse/Health & Psychology')}}" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
 						</div>
 					</div>
 				</div>
@@ -148,7 +148,7 @@
 						<div class="desc">
 							<h3><a href="#">Mathematics</a></h3>
 							<p>.</p>
-							<span><a href="{{url('/courses/math')}}" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
+							<span><a href="{{url('/courses/takecourse/Mathematics')}}" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
 						</div>
 					</div>
 				</div>
@@ -159,7 +159,7 @@
 						<div class="desc">
 							<h3><a href="#">App Development</a></h3>
 							<p>.</p>
-							<span><a href="web master.html" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
+							<span><a href="{{url('/courses/takecourse/App Development')}}" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
 						</div>
 					</div>
 				</div>
