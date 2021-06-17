@@ -17,7 +17,13 @@
                 </ul>
             </li>
             <li><a href="{{url('/contact')}}">Contact</a></li>
-            <li class="btn-cta"><a href="{{url('/login')}}"><span>Login</span></a></li>
+            <li class="btn-cta"><a href="{{url('/login')}}"><span>
+                @if(session()->get('loginID') != null)
+                    {{ session()->get('loginName') }}
+                @else
+                    {{ "Login" }}
+                @endif
+            </span></a></li>
             <li class="btn-cta"><a href="{{url('/registration')}}"><span>Sign Up</span></a></li>
         </ul>
     </div>

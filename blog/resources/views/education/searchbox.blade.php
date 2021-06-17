@@ -42,8 +42,8 @@
                   <div class="input-select">
                     <select data-trigger=""   name = "city">
                       <option placeholder="" value="">City</option>
-                      @forelse($teachers as $t)
-                        <option>{{$t->city}}</option>
+                      @forelse($cities as $city)
+                        <option>{{$city}}</option>
                       @empty
                         {{"Nothing to show!"}}
                       @endforelse

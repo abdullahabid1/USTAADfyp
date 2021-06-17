@@ -10,9 +10,10 @@ class TutorSearchController extends Controller
 {
     public function index()
     {
-        $teachers = Teacher::all();
+        $cities = Teacher::pluck('city')->toArray();
+        $cities = array_unique($cities, SORT_REGULAR);
 
-        return view('education.searchbox', compact('teachers'));
+        return view('education.searchbox', compact('cities'));
     }
 
     public function search(Request $req)

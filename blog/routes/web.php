@@ -6,6 +6,7 @@ use App\Http\Controllers\StudentController;
 use App\Http\Controllers\TeacherController;
 use App\Http\Controllers\TutorSearchController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\TakeCourse;
 
 /*
@@ -66,21 +67,23 @@ Route::get('/admin/{admin}', function () {
     return view('AdminDashboard.template.index');
 });
 
-Route::get('/admin/library', function () {
+Route::get('/admin/{admin}/library', function () {
     return view('AdminDashboard.template.library_admin');
 });
 
-Route::get('/admin/students', function () {
+Route::get('/admin/{admin}/students', function () {
     return view('AdminDashboard.template.table_students');
 });
 
-Route::get('/admin/tutors', function () {
+Route::get('/admin/{admin}/tutors', function () {
     return view('AdminDashboard.template.table_tutors');
 });
 
-Route::get('/admin/uploadbook', function () {
+Route::get('/admin/{admin}/uploadbook', function () {
     return view('AdminDashboard.template.uploadBook');
 });
+
+Route::get('/admin/{admin}/logout', [AdminController::class, 'logout']);
 //--------------Admin panel routes END----------------
 
 

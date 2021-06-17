@@ -41,6 +41,7 @@ class TeacherController extends Controller
 
         session()->put('loginID', $teacher->id);
         session()->put('loginAs', 'tutor');
+        session()->put('loginName', $teacher->firstName);
 
         return view('Teacher.edit',compact('teacher'));
     }
@@ -58,7 +59,7 @@ class TeacherController extends Controller
 
     public function showPrivate(Teacher $teacher)
     {
-        if(!$this->loginCheck()())
+        if(!$this->loginCheck())
         {
             return redirect('/login');
         }
@@ -132,6 +133,6 @@ class TeacherController extends Controller
 
     public function loginCheck()
     {
-        return (session()->get('loginID') != null && session()->get('loginAs') != null);
+        return (session()->get('loginID') != null && session()->get('loginAs') == 'tutor');
     }
 }

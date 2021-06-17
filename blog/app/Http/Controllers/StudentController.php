@@ -41,6 +41,7 @@ class StudentController extends Controller
 
         session()->put('loginID', $student->id);
         session()->put('loginAs', 'student');
+        session()->put('loginName', $student->firstname);
 
         return redirect('/student/'.$student->id.'/edit');
     }
@@ -131,6 +132,6 @@ class StudentController extends Controller
 
     public function loginCheck()
     {
-        return (session()->get('loginID') != null && session()->get('loginAs') != null);
+        return (session()->get('loginID') != null && session()->get('loginAs') == 'student');
     }
 }

@@ -37,6 +37,7 @@ class LoginController extends Controller
 
                 session()->put('loginID', $admin->id);
                 session()->put('loginAs', 'admin');
+                session()->put('loginName', $admin->name);
             }
             else if($loginAs == "Tutor")
             {
@@ -44,6 +45,7 @@ class LoginController extends Controller
 
                 session()->put('loginID', $teacher->id);
                 session()->put('loginAs', 'tutor');
+                session()->put('loginName', $teacher->firstName);
             }
             else
             {
@@ -51,6 +53,7 @@ class LoginController extends Controller
 
                 session()->put('loginID', $student->id);
                 session()->put('loginAs', 'student');
+                session()->put('loginName', $student->firstname);
             }
         }
 
@@ -74,7 +77,7 @@ class LoginController extends Controller
         }
         else if($loginAs == "tutor")
         {
-            $path = '/tutor/'.$loginID.'/show/private';
+            $path = '/teacher/'.$loginID.'/show/private';
         }
         else if($loginAs == "student")
         {
