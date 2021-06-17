@@ -19,7 +19,7 @@
 					<ul class="nav navbar-nav navbar-right">
 						
 						<li class="">
-							<a href="page-profile.html" class=""><img src="{{asset('assets/admin/img/apple-icon.png')}}" class="img-circle" alt="Avatar"> <span>{{ session()->get('loginName') }}</span> <i class="icon-submenu lnr"></i></a>
+							<a href="{{ url('/admin/'.session()->get('loginID')) }}" class=""><img src="{{asset('assets/admin/img/apple-icon.png')}}" class="img-circle" alt="Avatar"> <span>{{ session()->get('loginName') }}</span> <i class="icon-submenu lnr"></i></a>
 						</li>
 						<!-- <li>
 							<a class="update-pro" href="https://www.themeineed.com/downloads/klorofil-pro-bootstrap-admin-dashboard-template/?utm_source=klorofil&utm_medium=template&utm_campaign=KlorofilPro" title="Upgrade to Pro" target="_blank"><i class="fa fa-rocket"></i> <span>UPGRADE TO PRO</span></a>

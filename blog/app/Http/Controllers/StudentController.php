@@ -108,6 +108,7 @@ class StudentController extends Controller
     public function destroy(Student $student)
     {
         $student->delete();
+        return redirect('/');
     }
 
     public function SaveImage(Student $student)
@@ -132,6 +133,6 @@ class StudentController extends Controller
 
     public function loginCheck()
     {
-        return (session()->get('loginID') != null && session()->get('loginAs') == 'student');
+        return (session()->get('loginID') != null && (session()->get('loginAs') == 'student' || session()->get('loginAs') == 'admin'));
     }
 }

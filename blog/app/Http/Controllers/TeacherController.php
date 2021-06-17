@@ -117,9 +117,11 @@ class TeacherController extends Controller
             'image' => '/images/teacher/'.$filename
             ]); 
     }
-    public function destroy(Student $student)
+    public function destroy(Teacher $teacher)
     {
-        $student->delete();
+        print("delete");
+        $teacher->delete();
+        return redirect('/');
     }
     
     
@@ -133,6 +135,6 @@ class TeacherController extends Controller
 
     public function loginCheck()
     {
-        return (session()->get('loginID') != null && session()->get('loginAs') == 'tutor');
+        return (session()->get('loginID') != null && (session()->get('loginAs') == 'tutor' || session()->get('loginAs') == 'admin'));
     }
 }

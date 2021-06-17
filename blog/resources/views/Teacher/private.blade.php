@@ -155,12 +155,9 @@
                         </div>
                         <div class="col-sm-6">
                             <div class="text-right">
-                            <a href="/teacher/{{ $teacher->id }}/edit">
-									<button type="submit" class="btn btn-primary waves-effect"><i class="mdi mdi-account-settings-variant mr-1"></i> Edit Profile</button></a>
-                                    
-                                    <a href="/teacher/{{ $teacher->id }}/logout">
-									<button type="submit" class="btn btn-success waves-effect"><i class="mdi mdi-account-settings-variant mr-1"></i> Logout</button></a>
-                                    
+                                 @if(session()->get('loginAs') == 'tutor')
+                                    @include('Teacher.teacherEditLogoutButtons', ["teacher" => $teacher])
+                                @endif         
                                 <form action="/teacher/{{ $teacher->id }}" method = "POST">
                                 @csrf
                                 @method('DELETE')

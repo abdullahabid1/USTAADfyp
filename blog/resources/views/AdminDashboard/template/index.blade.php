@@ -47,7 +47,7 @@
 									<div class="metric">
 										<span class="icon"><i class="fa fa-user"></i></span>
 										<p>
-											<span class="number">1,252</span>
+											<span class="number">{{ count($students) + count($teachers) }}</span>
 											<span class="title">Registered Users</span>
 										</p>
 									</div>
@@ -56,7 +56,7 @@
 									<div class="metric">
 										<span class="icon"><i class="fa fa-user"></i></span>
 										<p>
-											<span class="number">203</span>
+											<span class="number">{{ count($teachers) }}</span>
 											<span class="title">Tutors</span>
 										</p>
 									</div>
@@ -65,7 +65,7 @@
 									<div class="metric">
 										<span class="icon"><i class="fa fa-user"></i></span>
 										<p>
-											<span class="number">274,678</span>
+											<span class="number">{{ count($students) }}</span>
 											<span class="title">Students</span>
 										</p>
 									</div>
@@ -94,26 +94,7 @@
 										<button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>
 									</div>
 								</div>
-								<div class="panel-body no-padding">
-									<table class="table table-striped">
-										<thead>
-											<tr>
-												<th>Name</th>
-												<th>Profession</th>
-												<th>Status</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>FullName</td>
-												<td>Tutor</td>
-												<td><span class="label label-success">Active</span></td>
-												<td><a href = "#" class="label label-primary">View Profile</a></td>
-											</tr>
-											
-										</tbody>
-									</table>
-								</div>
+								
 							</div>
 							<!-- END RECENT PURCHASES -->
 						</div>

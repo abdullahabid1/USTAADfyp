@@ -57,30 +57,13 @@
 											</tr>
 										</thead>
 										<tbody>
-											<tr>
-												<td>1</td>
-												<td>Steve Jobs</td>
-												<td>090078601</td>
-												<td>Web Development</td>
-												<td>$100/hr</td>
-												<td><a href="#" class = "btn btn-primary">View Profile</a></td>
-											</tr>
-											<tr>
-												<td>1</td>
-												<td>Steve Jobs</td>
-												<td>090078601</td>
-												<td>Web Development</td>
-												<td>$100/hr</td>
-												<td><a href="#" class = "btn btn-primary">View Profile</a></td>
-											</tr>
-											<tr>
-												<td>1</td>
-												<td>Steve Jobs</td>
-												<td>090078601</td>
-												<td>Web Development</td>
-												<td>$100/hr</td>
-												<td><a href="#" class = "btn btn-primary">View Profile</a></td>
-											</tr>
+										{{ $count = 0 }}
+											@forelse($teachers as $teacher)
+												{{ $count += 1 }}
+												@include('AdminDashboard.template.tutorRow', ["teacher" => $teacher, "count" => $count]);
+											@empty
+												{{ "no teacher found!" }}
+											@endforelse
 										</tbody>
 									</table>
 								</div>

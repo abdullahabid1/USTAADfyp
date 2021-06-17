@@ -63,22 +63,14 @@ Route::get('/registration', function () {
 
 
 //--------------Admin panel routes START----------------
-Route::get('/admin/{admin}', function () {
-    return view('AdminDashboard.template.index');
-});
+Route::get('/admin/{admin}', [AdminController::class, 'index']);
+Route::get('/admin/{admin}/students', [AdminController::class, 'studentList']);
+Route::get('/admin/{admin}/tutors', [AdminController::class, 'tutorList']);
+
 
 Route::get('/admin/{admin}/library', function () {
     return view('AdminDashboard.template.library_admin');
 });
-
-Route::get('/admin/{admin}/students', function () {
-    return view('AdminDashboard.template.table_students');
-});
-
-Route::get('/admin/{admin}/tutors', function () {
-    return view('AdminDashboard.template.table_tutors');
-});
-
 Route::get('/admin/{admin}/uploadbook', function () {
     return view('AdminDashboard.template.uploadBook');
 });
@@ -115,7 +107,7 @@ Route::get('/teacher/{teacher}/edit', [TeacherController::class, 'edit']);
 Route::get('/teacher/{teacher}/show/private', [TeacherController::class, 'showPrivate']);
 Route::get('/teacher/{teacher}/show/public', [TeacherController::class, 'showPublic']);
 Route::PATCH('/teacher/{teacher}', [TeacherController::class, 'update']);
-Route::DELETE('/teacher/{teacher}', [StudentController::class, 'destroy']);
-Route::get('/teacher/{teacher}/logout', [StudentController::class, 'logout']);
+Route::DELETE('/teacher/{teacher}', [TeacherController::class, 'destroy']);
+Route::get('/teacher/{teacher}/logout', [TeacherController::class, 'logout']);
 //------------Student Routes END------------------
 

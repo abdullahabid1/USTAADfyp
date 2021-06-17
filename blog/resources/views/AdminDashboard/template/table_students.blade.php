@@ -57,31 +57,13 @@
 											</tr>
 										</thead>
 										<tbody>
-											<tr>
-												<td>1</td>
-												<td>Steve Jobs</td>
-												<td>090078601</td>
-												<td>Student@gmail.com</td>
-												<td></td>
-												<td><a href="#" class = "btn btn-primary">View Profile</a></td>
-											</tr>
-											<tr>
-												<td>1</td>
-												<td>Steve Jobs</td>
-												<td>090078601</td>
-												<td>Student@gmail.com</td>
-												<td></td>
-												<td><a href="#" class = "btn btn-primary">View Profile</a></td>
-											</tr>
-											<tr>
-												<td>1</td>
-												<td>Steve Jobs</td>
-												<td>090078601</td>
-												<td>Student@gmail.com</td>
-												<td></td>
-												<td><a href="#" class = "btn btn-primary">View Profile</a></td>
-											</tr>
-											
+											{{ $count = 0 }}
+											@forelse($students as $student)
+												{{ $count += 1 }}
+												@include('AdminDashboard.template.studentRow', ["student" => $student, "count" => $count]);
+											@empty
+												{{ "no student found!" }}
+											@endforelse
 										</tbody>
 									</table>
 								</div>
