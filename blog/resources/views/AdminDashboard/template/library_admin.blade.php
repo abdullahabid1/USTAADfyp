@@ -189,61 +189,16 @@ table.shoping-cart-table tr td:last-child {
 			<div class="main-content">
 				<div class="container-fluid">
 					<h3 class="page-title">Library</h3>
-					<a href="{{url('/admin/uploadbook')}}" class="btn btn-xl btn-outline btn-primary">Upload Book</a>
+					<a href="{{url('/admin/'.session()->get('loginID').'/uploadbook')}}" class="btn btn-xl btn-outline btn-primary">Upload Book</a>
 					<br>
 					<br>
 					<br>
 					<div class="row">
-						<div class="col-md-3">
-							<div class="ibox">
-								<div class="ibox-content product-box">
-									<div class="product-imitation">
-										Picture here
-									</div>
-									<div class="product-desc">
-										<span class="product-price">
-											$10
-										</span>
-										<a href="#" class="product-name">Name Here</a>
-					
-										<div class="small m-t-xs">
-											<br>
-										</div>
-										<div class="m-t text-righ">
-					
-											<a href="UploadBook.html" class="btn btn-xs btn-outline btn-primary">Edit <i class="fa fa-long-arrow-right"></i> </a>
-											<a href="#" class="btn btn-xs btn-outline btn-danger">Delete <i class="fa fa-long-arrow-right"></i> </a>
-										</div>
-									</div>
-								</div>
-							</div>	
-						</div>
-
-						<div class="col-md-3">
-							<div class="ibox">
-								<div class="ibox-content product-box">
-									<div class="product-imitation">
-										Picture here
-									</div>
-									<div class="product-desc">
-										<span class="product-price">
-											$10
-										</span>
-										<a href="#" class="product-name">Name Here</a>
-					
-										<div class="small m-t-xs">
-											<br>
-										</div>
-										<div class="m-t text-righ">
-					
-											<a href="UploadBook.html" class="btn btn-xs btn-outline btn-primary">Edit <i class="fa fa-long-arrow-right"></i> </a>
-											<a href="#" class="btn btn-xs btn-outline btn-danger">Delete <i class="fa fa-long-arrow-right"></i> </a>
-										</div>
-									</div>
-								</div>
-							</div>	
-						</div>
-
+						@forelse($books as $book)
+							@include('AdminDashboard.template.bookDisplay', ['book' => $book])
+						@empty
+						{{ "nothing found!" }}
+						@endforelse
 					</div>
 					
 				</div>

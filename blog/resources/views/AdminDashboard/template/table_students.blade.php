@@ -57,9 +57,9 @@
 											</tr>
 										</thead>
 										<tbody>
-											{{ $count = 0 }}
+											{{ !! $count = 0}}
 											@forelse($students as $student)
-												{{ $count += 1 }}
+												{{ !! $count += 1 }}
 												@include('AdminDashboard.template.studentRow', ["student" => $student, "count" => $count]);
 											@empty
 												{{ "no student found!" }}

@@ -68,12 +68,12 @@ Route::get('/admin/{admin}/students', [AdminController::class, 'studentList']);
 Route::get('/admin/{admin}/tutors', [AdminController::class, 'tutorList']);
 
 
-Route::get('/admin/{admin}/library', function () {
-    return view('AdminDashboard.template.library_admin');
-});
+Route::get('/admin/{admin}/library', [AdminController::class, 'library']);
 Route::get('/admin/{admin}/uploadbook', function () {
     return view('AdminDashboard.template.uploadBook');
 });
+
+Route::post('/admin/{admin}/uploadbook', [AdminController::class, 'uploadBook']);
 
 Route::get('/admin/{admin}/logout', [AdminController::class, 'logout']);
 //--------------Admin panel routes END----------------

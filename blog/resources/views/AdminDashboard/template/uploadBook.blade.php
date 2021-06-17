@@ -44,31 +44,35 @@
 									<h3 class="panel-title"></h3>
 								</div>
 								<div class="panel-body">
+								<form action = "/admin/{admin}/uploadbook" method = "post" enctype="multipart/form-data">
+									@csrf
+									<label for="">Book Document</label>
+									<input type="file" required class="" name = "file">
 									<label for="">Display Picture</label>
-									<input type="file" class="">
+									<input type="file" required class="" name = "image">
 									<br>
 									<label for="">Name</label>
-									<input type="text" class="form-control" placeholder="Book Name">
+									<input type="text" required class="form-control" name = "name" placeholder="Book Name">
 									<br>
 									<label for="">Discription</label>
-									<textarea class="form-control" placeholder="Book Discription" rows="4"></textarea>
+									<textarea required class="form-control" placeholder="Book Discription" name = "discription" rows="4"></textarea>
 									<br>
 									<label for="">Price ($)</label>
-									<input type="number" class="form-control" placeholder="price">
+									<input type="number" class="form-control" name = "price" placeholder="price">
 									<br>
-									<label for="">Paid for premium users?</label>
+									<label for="">Paid</label>
 									<label class="fancy-radio">
-										<input name="gender" value="male" type="radio">
+										<input name="paid" value="paid" type="radio">
 										<span><i></i>Yes</span>
 									</label>
 									<label class="fancy-radio">
-										<input name="gender" value="female" type="radio">
+										<input checked name="paid" value="unpaid" type="radio">
 										<span><i></i>No</span>
 									</label>
 									<br>
 									<button type="submit" class = "btn btn-primary">Upload</button>
-									<button type="submit" class = "btn btn-success">Update</button>
-									<a href="{{url('/admin')}}" class = "btn btn-default">Cancle</a>
+									</form>
+									<a href="{{url('/admin/'.session()->get('loginID'))}}" class = "btn btn-default">Cancle</a>
 								</div>
 							</div>
 							<!-- END INPUTS -->

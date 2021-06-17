@@ -74,7 +74,7 @@
 									<div class="metric">
 										<span class="icon"><i class="fa fa-download"></i></span>
 										<p>
-											<span class="number">10000</span>
+											<span class="number">{{ count($books) }}</span>
 											<span class="title">Books</span>
 										</p>
 									</div>
