@@ -5,6 +5,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\TeacherController;
 use App\Http\Controllers\TutorSearchController;
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\TakeCourse;
 
 /*
@@ -50,9 +51,8 @@ Route::get('/contact', function () {
     return view('education.contact');
 });
 
-Route::get('/login', function () {
-    return view('education.login');
-});
+Route::get('/login', [LoginController::class, 'index']);
+Route::post('/login/process', [LoginController::class, 'processLogin']);
 
 Route::get('/registration', function () {
     return view('education.registration');
@@ -62,7 +62,7 @@ Route::get('/registration', function () {
 
 
 //--------------Admin panel routes START----------------
-Route::get('/admin', function () {
+Route::get('/admin/{admin}', function () {
     return view('AdminDashboard.template.index');
 });
 
@@ -102,6 +102,7 @@ Route::get('/student/{student}/show', [StudentController::class, 'show']);
 Route::get('/student/{student}/edit', [StudentController::class, 'edit']);
 Route::PATCH('/student/{student}', [StudentController::class, 'update']);
 Route::DELETE('/student/{student}', [StudentController::class, 'destroy']);
+Route::get('/student/{student}/logout', [StudentController::class, 'logout']);
 
 //------------Student Routes END------------------
 
@@ -112,5 +113,6 @@ Route::get('/teacher/{teacher}/show/private', [TeacherController::class, 'showPr
 Route::get('/teacher/{teacher}/show/public', [TeacherController::class, 'showPublic']);
 Route::PATCH('/teacher/{teacher}', [TeacherController::class, 'update']);
 Route::DELETE('/teacher/{teacher}', [StudentController::class, 'destroy']);
+Route::get('/teacher/{teacher}/logout', [StudentController::class, 'logout']);
 //------------Student Routes END------------------
 

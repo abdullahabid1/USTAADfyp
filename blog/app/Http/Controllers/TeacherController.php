@@ -38,6 +38,10 @@ class TeacherController extends Controller
     {
         $teacher=Teacher::create($request->all());
         $teacher->save();
+
+        session()->put('loginID', $teacher->id);
+        session()->put('loginAs', 'tutor');
+
         return view('Teacher.edit',compact('teacher'));
     }
 
@@ -54,6 +58,10 @@ class TeacherController extends Controller
 
     public function showPrivate(Teacher $teacher)
     {
+        if(!$this->loginCheck()())
+        {
+            return redirect('/login');
+        }
         return view('Teacher.private',compact('teacher'));
     }
 
@@ -65,6 +73,10 @@ class TeacherController extends Controller
      */
     public function edit(Teacher $teacher)
     {
+        if(!$this->loginCheck())
+        {
+            return redirect('/login');
+        }
         return view('Teacher.edit',compact('teacher'));
     }
 
@@ -109,4 +121,17 @@ class TeacherController extends Controller
         $student->delete();
     }
     
+    
+    public function logout()
+    {
+        session()->forget('loginID');
+        session()->forget('loginAs');
+
+        return redirect('/login');
+    }
+
+    public function loginCheck()
+    {
+        return (session()->get('loginID') != null && session()->get('loginAs') != null);
+    }
 }

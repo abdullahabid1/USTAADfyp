@@ -106,20 +106,42 @@
                     <div class="col-md-8 register-right">
                        <center>
                                 <h3 class="register-heading">Login</h3>
-								<form action = "#" method = "post">
+								<form action = "{{url('/login/process')}}" method = "post">
+                                @csrf
                                 <div class="row register-form">
                                     <div class="col-md-7">
                                         <center>
                                         
 										<div class="form-group"><center>
-                                            <input type="email" class="form-control" placeholder="Your Email *" value="" required>
+                                            <input type="email" class="form-control" name = "email" placeholder="Your Email *" value="" required>
                                         </div>
                                         
                                         <div class="form-group">
-                                            <input type="password" class="form-control" placeholder="Password *" value="" required>
+                                            <input type="password" class="form-control" name = "password" placeholder="Password *" value="" required>
                                         </div>
-                                       
+
+                                        <div class="form-group">
+                                            <div class="maxl">
+                                                <label class="radio inline"> 
+                                                    <input type="radio" name="loginAs" value="Admin" checked="">
+                                                    <span> Admin </span> 
+                                                </label>
+                                                <label class="radio inline"> 
+                                                    <input type="radio" name="loginAs" value="Tutor">
+                                                    <span>Tutor </span> 
+                                                </label>
+                                                
+                                                <label class="radio inline"> 
+                                                    <input type="radio" name="loginAs" value="Student">
+                                                    <span>Student </span> 
+                                                </label>
+                                            </div>
+                                        </div>
+
                                     </div>
+                                    
+
+
                                     <div class="col-md-6">
                                         
 
@@ -127,13 +149,14 @@
                                         
                                     </div>
                                 </div>
+                                </form>
                                 <div class='col-lg-12 forgot_pw'>
       <p>
         <span> Forgot your Password? </span>
         <a class="links2" href="/users/password/new">Click here to reset it</a>
       </p>
     </div>
-								</form></center>
+								</center>
 							</div>
 
              <script type="text/javascript"></script></center></body></html>

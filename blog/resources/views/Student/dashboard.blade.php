@@ -157,8 +157,13 @@
                         </div>
                         <div class="col-sm-6">
                             <div class="text-right">
-                            	<a href="/student/{{ $student->id }}/edit">
-                                <button type="button" class="btn btn-light waves-effect"><i class="mdi mdi-account-settings-variant mr-1"></i> Edit Profile</button></a>
+                            	<a href="/student/{{ $student->id }}/logout">
+                                <button type="button" class="btn btn-success waves-effect"><i class="mdi mdi-account-settings-variant mr-1"></i> Logout</button></a>
+                                <a href="/student/{{ $student->id }}/edit">
+									<button type="submit" class="btn btn-primary waves-effect"><i class="mdi mdi-account-settings-variant mr-1"></i> Edit Profile</button></a>
+                                    
+                            
+                            
                             <form action="/student/{{ $student->id }}" method = "POST">
                                 @csrf
                                 @method('DELETE')

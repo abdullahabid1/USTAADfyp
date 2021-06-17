@@ -38,6 +38,10 @@ class StudentController extends Controller
     public function store(Request $request)
     {
         $student = Student::create($request->all());
+
+        session()->put('loginID', $student->id);
+        session()->put('loginAs', 'student');
+
         return redirect('/student/'.$student->id.'/edit');
     }
 
@@ -54,6 +58,10 @@ class StudentController extends Controller
 
     public function showDashboard(Student $student)
     {
+        if(!$this->loginCheck())
+        {
+            return redirect('/login');
+        }
         return view('student.dashboard', compact('student'));
     }
     /**
@@ -64,6 +72,10 @@ class StudentController extends Controller
      */
     public function edit(Student $student)
     {
+        if(!$this->loginCheck())
+        {
+            return redirect('/login');
+        }
         return view('Student.edit', compact("student"));
     }
 
@@ -107,5 +119,18 @@ class StudentController extends Controller
         $student->update([
             'image' => '/images/student/'.$filename
             ]); 
+    }
+
+    public function logout()
+    {
+        session()->forget('loginID');
+        session()->forget('loginAs');
+
+        return redirect('/login');
+    }
+
+    public function loginCheck()
+    {
+        return (session()->get('loginID') != null && session()->get('loginAs') != null);
     }
 }
