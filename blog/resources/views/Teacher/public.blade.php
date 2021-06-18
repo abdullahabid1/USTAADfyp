@@ -89,8 +89,7 @@
                       <h4>{{$teacher->firstName." ".$teacher->lastName}}</h4>
                       <p class="text-secondary mb-1">About Me {{$teacher->about}} </p>
 					  <button class="btn btn-primary" id = "RequestDemo">Request Demo</button>
-					  <button class="btn btn-primary" id = "RequestSent" disabled>Request Sent</button>
-                      <button class="btn btn-success" id = "DemoLecture">Demo Lecture</button>
+                      <a href = "{{$teacher->demo}}" target = "_blank" class="btn btn-success" id = "DemoLecture">Demo Lecture</a>
                       <a href = "ChatBox.html"><button class="btn btn-outline-primary">Message</button></a>
                     </div>
                   </div>
@@ -291,10 +290,9 @@
 	<script>
 		$(document).ready(function() {
 			$("#DemoLecture").hide();
-			$("#RequestSent").hide();
 			$("#RequestDemo").click(function(){
 			  $("#RequestDemo").hide();
-			  $("#RequestSent").show();
+			  $("#DemoLecture").show();
 			});
 		});
 	</script>
