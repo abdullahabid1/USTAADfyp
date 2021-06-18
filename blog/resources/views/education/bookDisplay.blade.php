@@ -6,7 +6,7 @@
             </div>
             <div class="product-desc">
                 <span class="product-price">
-                    @if($book->price > '0' || $book->paid == "unpaid")
+                    @if($book->paid == "paid")
                         {{ "$".$book->price }}
                     @else
                         {{ "Free "}}
@@ -18,12 +18,9 @@
                     <br>
                 </div>
                 <div class="m-t text-righ">
-                     <form action="/admin/deletebook/{{$book->id}}" method = "POST">
-                                @csrf
-                                @method('DELETE')
-                                 <button type="submit" class="btn btn-danger waves-effect"><i class="mdi mdi-account-settings-variant mr-1"></i> Delete</button>
-                    </form>
-                </div>
+                     
+                                 <a href="{{ url('/library/'.$book->id.'/download') }}" class="btn btn-success waves-effect"><i class="mdi mdi-account-settings-variant mr-1">Download</i></a>
+                        </div>
             </div>
         </div>
     </div>	

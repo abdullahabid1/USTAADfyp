@@ -26,6 +26,14 @@
     background:#eee;
 }
 /* E-commerce */
+.img{
+  display: inline-block;
+  position: relative;
+  height: 200px;
+  top:-90px;
+  width: 100%;
+  }
+
 .product-box {
   padding: 0;
   border: 1px solid #e7eaec;
@@ -43,6 +51,8 @@
   background-color: #f8f8f9;
   color: #bebec3;
   font-weight: 600;
+  height:100px;
+  width:100%;
 }
 .cart-product-imitation {
   text-align: center;

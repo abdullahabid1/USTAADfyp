@@ -83,4 +83,30 @@ class AdminController extends Controller
             'file' => '/files/library/'.$filename
             ]); 
     }
+
+    public function deleteBook(Library $library)
+    {
+        $library->delete();
+        return redirect('/admin/'.session()->get('loginID'));
+    }
+
+
+
+    public function commonLibrary()
+    {
+        $books = Library::all();
+
+        return view('education.ebooks', compact('books'));
+    }
+    
+    public function downloadBook(Library $library)
+    {
+        $file= $library->file;
+
+        $headers = array(
+                'Content-Type: application/pdf',
+                );
+
+        return response()->download(public_path().$file, 'book'.$library->id.'.pdf', $headers);
+    }
 }

@@ -44,9 +44,10 @@ Route::get('/pricing', function () {
 Route::get('/library', function () {
     return view('education.library');
 });
-Route::get('/ebooks', function () {
-    return view('education.ebooks');
-});
+
+
+Route::get('/ebooks', [AdminController::class, 'commonLibrary']);
+Route::get('/library/{library}/download', [AdminController::class, 'downloadBook']);
 
 Route::get('/contact', function () {
     return view('education.contact');
@@ -74,6 +75,7 @@ Route::get('/admin/{admin}/uploadbook', function () {
 });
 
 Route::post('/admin/{admin}/uploadbook', [AdminController::class, 'uploadBook']);
+Route::delete('/admin/deletebook/{library}', [AdminController::class, 'deleteBook']);
 
 Route::get('/admin/{admin}/logout', [AdminController::class, 'logout']);
 //--------------Admin panel routes END----------------
