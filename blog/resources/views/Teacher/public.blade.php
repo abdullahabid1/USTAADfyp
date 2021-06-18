@@ -90,7 +90,7 @@
                       <p class="text-secondary mb-1">About Me {{$teacher->about}} </p>
 					  <button class="btn btn-primary" id = "RequestDemo">Request Demo</button>
                       <a href = "{{$teacher->demo}}" target = "_blank" class="btn btn-success" id = "DemoLecture">Demo Lecture</a>
-                      <a href = "ChatBox.html"><button class="btn btn-outline-primary">Message</button></a>
+                      <a href = "/"><button class="btn btn-outline-primary">Back</button></a>
                     </div>
                   </div>
                 </div>

@@ -151,10 +151,7 @@
                                 </div>
                                 </form>
                                 <div class='col-lg-12 forgot_pw'>
-      <p>
-        <span> Forgot your Password? </span>
-        <a class="links2" href="/users/password/new">Click here to reset it</a>
-      </p>
+      
     </div>
 								</center>
 							</div>

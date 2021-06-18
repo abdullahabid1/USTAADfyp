@@ -189,7 +189,9 @@
                             <p class="text-muted font-13"><strong>Mobile :</strong><span class="m-l-15">{{ $student->phone }}</span></p>
                             <p class="text-muted font-13"><strong>Email :</strong> <span class="m-l-15">{{ $student->email }}</span></p>
                             <p class="text-muted font-13"><strong>Location :</strong> <span class="m-l-15">{{ $student->street.", ".$student->city.", ".$student->country }}</span></p>
-                            
+                            <a href="/">
+                            <button type="submit" class="btn btn-primary waves-effect"><i class="mdi mdi-account-settings-variant mr-1"></i>Back</button></a>
+
                         </div>
 
                        
@@ -276,24 +278,7 @@
             </div>
             <div class="col-xl-8">
                 <div class="row">
-                    <div class="col-sm-4">
-                        <div class="card-box tilebox-one"><i class="icon-layers float-right text-muted"></i>
-                            <h6 class="text-muted text-uppercase mt-0">Courses</h6>
-                            <h2 class="" data-plugin="counterup">100</h2><span class="badge badge-custom">+11% </span><span class="text-muted">From previous period</span></div>
-                    </div>
-                    <!-- end col -->
-                    <div class="col-sm-4">
-                        <div class="card-box tilebox-one"><i class="icon-paypal float-right text-muted"></i>
-                            <h6 class="text-muted text-uppercase mt-0">Teachers</h6>
-                            <h2 class=""><span data-plugin="counterup">460</span></h2><span class="badge badge-danger">+29% </span><span class="text-muted">From previous period</span></div>
-                    </div>
-                    <!-- end col -->
-                    <div class="col-sm-4">
-                        <div class="card-box tilebox-one"><i class="icon-rocket float-right text-muted"></i>
-                            <h6 class="text-muted text-uppercase mt-0">Libaray Books</h6>
-                            <h2 class="" data-plugin="counterup">1,890</h2><span class="badge badge-custom">+89% </span><span class="text-muted">Last year</span></div>
-                    </div>
-                    <!-- end col -->
+                    
                 </div>
                 <!-- end row -->
                

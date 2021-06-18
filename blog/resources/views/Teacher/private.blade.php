@@ -187,6 +187,9 @@
 							<p class="text-muted font-13"><strong>Address :</strong> <span class="m-l-15">{{$teacher->address}}</span></p>
                             <p class="text-muted font-13"><strong>Fee :</strong> <span class="m-l-5"><span class="m-l-15">{{$teacher->price}}</span>
                             </p>
+                            <a href="/">
+                            <button type="submit" class="btn btn-primary waves-effect"><i class="mdi mdi-account-settings-variant mr-1"></i>Back</button></a>
+
                         </div>
                         <ul class="social-links list-inline mt-4 mb-0">
                             <li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="" data-original-title="Facebook"><i class="fa fa-facebook"></i></a></li>
@@ -342,7 +345,7 @@
                     <h4 class="header-title mt-0 mb-3">Price</h4>
                     <div class="">
                     <ul class = "list-group list-group-flush">
-							<li class = "list-group-item"><h5 class = "">{{$teacher->price}}</h5></li>
+							<li class = "list-group-item"><h5 class = "">${{$teacher->price}}</h5></li>
                             </ul>
                             </div>
                     </div>

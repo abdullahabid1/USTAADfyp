@@ -13,7 +13,6 @@
                 <a href="{{url('/library')}}">Library</a>
                 <ul class="dropdown">
                     <li><a href="{{url('/ebooks')}}">E-Books</a></li>
-                    <li><a href="ebooks.html">Notes</a></li>
                 </ul>
             </li>
             <li><a href="{{url('/contact')}}">Contact</a></li>
